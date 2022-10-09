@@ -11,7 +11,7 @@ function abrirMenu(){
 
 
 function fecharMenu(){
-    sidenav.style.right='-520px';
+    sidenav.style.right='-700px';
 }
 
 

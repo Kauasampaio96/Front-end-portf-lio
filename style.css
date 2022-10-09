@@ -850,8 +850,294 @@ body{
 
 }
 
-@media (max-width: 1190px){
+@media (max-width: 1000px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+
+    #btntopo{
+        bottom: 100px;
+        right: 60px;
+    }
+
+    #btntopo img{
+        width: 75px;
+    }
+
+    .bg-space .content .textos{
+        margin-left: 80px;
+    }
+
+    .bg-space .content h3{
+        font-size: 25px;
+    }
+
+    .bg-space .content h2:nth-child(3){
+        font-size: 85px;
+    }
+
+    .bg-space .content h2{
+        font-size: 100px;
+    }
+
+    .bg-space .content p{
+        font-size: 12px;
+    }
+
+    .content .lateral{
+        display: none;
+    }
+
+    .content .embaixo{
+       display: none;
+    }
+
+    .section1 .texto-img .imagem{
+        display: none;
+    }
+
+    .section1 .texto-img .texto{
+        width: 80%;
+    }
+
+    .projetos {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 600px;
+        height: 350px;
+    }
+
+    .card .content-card h2{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 29px;
+        color: white;
+        margin-bottom: 7px;
+    }
+    
+    .card .content-card p{
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .card .content-card a{
+
+        font-weight: 500;
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 10px 10px;
+        background: rgba(255, 255, 255, 0.88);
+        border-radius: 10px;
+        width: 65%;
+    }
+
+}
+
+@media (max-width: 850px){
+
+    .section1 .titulo h2{
+        font-size: 45px;
+    }
+
+    .card {
+        width: 475px;
+        height: 277.08px;
+        margin-right: 50px;
+    }
+
+    .card:hover img{
+        left: 95%;
+        height: 400px;
+    }
+
+    .card .content-card h2{
+        font-size: 20px;
+    }
+    
+    .card .content-card p{
+        font-size: 12px;
+    }
+
+    .card .content-card a{
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+
+}
+
+@media (max-width: 645px){
+
+
+    .content .sidenavest .nav-list{
+        margin-right: 20px;
+    }
+
+
+    .bg-space .content .textos{
+        margin-left: 30px;
+    }
+
+    .bg-space .content h3{
+        font-size: 25px;
+    }
+
+    .bg-space .content h2:nth-child(3){
+        font-size: 75px;
+    }
+
+    .bg-space .content h2{
+        font-size: 85px;
+    }
+
+    .bg-space .content p{
+        font-size: 12px;
+    }
+    
+    .form-box{
+        width: 450px;
+        padding: 30px 50px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.632) 0px 5px 15px;
+    }
+
+    #section2 .titulo h2{
+        font-size: 37px;
+    }
+
+    .section1 .sobre-tech h2 {
+        font-size: 20px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .section1 .texto-img .imagens-tech{
+        margin-top: 25px;
+    }
+
+    .card {
+        width: 475px;
+        height: 277.08px;
+        margin-right: 50px;
+    }
+
+    .card:hover img{
+        left: 95%;
+        height: 400px;
+    }
+
+    .card .content-card h2{
+        font-size: 20px;
+    }
+    
+    .card .content-card p{
+        font-size: 12px;
+    }
+
+    .card .content-card a{
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+
+
+    .form-box form .btn-custom{
+        width: 35%;
+    }
+
+    .form-box .second-h3{
+        display: none;
+    }
+
+    .form-box .wrapper{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 545px){
+
+    .bg-space .content .textos{
+        margin-left: 20px;
+    }
 
 
 
+    .bg-space .content h3{
+        font-size: 18px;
+    }
+
+    .bg-space .content h2:nth-child(3){
+        font-size: 48px;
+    }
+
+    .bg-space .content h2{
+        font-size: 75px;
+    }
+
+
+    .card {
+        width: 300px;
+        height: 175px;
+        margin-right: 20px;
+    }
+
+    .card:hover{
+        height: 500px;
+    }
+
+    .card .content-card{
+        width: 100%;
+        left: 0;
+        padding: 20px;
+        position: relative;
+        top: -100px;
+    }
+
+    .card:hover img{
+        top: 85%;
+        left: 50%;
+    }
+
+    .card .circle:before {
+        clip-path: circle(85px);
+    }
+
+    .card .content-card h2{
+       font-size: 22px;
+    }
+    
+    .card .content-card p{
+        font-size: 12px;
+    }
+
+    .card .content-card a{
+        width: 100%;
+        position: relative;
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+
+    .section1 .sobre-tech h2 {
+        display: none;
+    }
+
+
+    .section1 .texto-img .imagens-tech{
+        display: none;
+    }
+
+    #section2 .titulo h2{
+        padding: 0 5px;
+        text-align: center;
+
+    }
+
+    #section3 .titulo h2{
+        font-size: 37px;
+    }
 }
