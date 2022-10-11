@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="Projeto Crud- Django - Brave 2022-09-22 15-31-04_Trim.gif">
+  <img src="to_readme.gif">
 </p>
 
 <p align="center">
-  <img src="to_read-me2.gif">
+  <img src="to_readme2.gif">
 </p>
 
 <h2>Sobre o projeto</h2>
