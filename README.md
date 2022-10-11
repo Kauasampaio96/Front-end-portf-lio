@@ -18,3 +18,9 @@
 <p>
   Utilizei figma para montar uma ideia do projeto, e em todo o projeto utilizei Html, Css e Javascript.
 </p>
+
+
+<h2>Hospedagem</h2>
+
+https://kauachaves-portfolio.netlify.app/
+
