@@ -10,11 +10,11 @@
 <h2>Sobre o projeto</h2>
 
 <p>
-  O projeto foi feito com o objetivo de abordar Tecnologias tanto do Front-end como do Back-end (Django) em um CRUD que nada mais é que ações dentro de um banco de dados (READ, CREAT, UPDATE, DELETE)
+  O projeto foi feito com o objetivo de me apresentar como um profissional em formação na área, demonstrando habilidades em desenvolvimento Web.
 </p>
 
 <h2>Tecnologias Utilizadas</h2>
 
 <p>
-  No Front-end utilizei o Figma para montar o layout do sistema, utilizei também conhecimentos em Html, Css, Bootstrap e Javascript para construir o layout e inserir algumas funcionalidades que facilitariam a experiencia do usuário
+  Utilizei figma para montar uma ideia do projeto, e em todo o projeto utilizei Html, Css e Javascript.
 </p>
