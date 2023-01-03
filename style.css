@@ -399,6 +399,7 @@ body{
 
 .section1 .texto-img .imagem{
     margin-left: 50px;
+    margin-bottom: 70px;
     position: relative;
     transition: 0.5s all;
 }
