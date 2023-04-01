@@ -4,344 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kauã Chaves - Portfólio</title>
+    <title>Portfólio | © Kauã Chaves </title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
+
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Poppins:ital,wght@0,200;0,600;1,200&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="icon" href="assets/icon.png">
+    <!--Favicon-->
+    <link rel="icon" href="assets/favicon.svg">
 
+     <!--Animations-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
 
+  <header>
 
-    <div id="btntopo" class="btn-topo">
-      <a href="#index">
-        <img width="55px" src="assets/pra-cima.png" alt="">
-      </a>
+    <div class="navbar">
+      <ul class="navbar-list">
+        <li><a href="#">Sobre Mim</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+
+      <div class="navbar-icons">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a> 
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
     </div>
 
-    <div class="bg-space">
-        <video autoplay muted loop src="/assets/Estrelas.mp4"></video>
 
-        <div id="index" class="content">
-
-            <header>
-                <nav>
-                    <ul>
-                        <li>
-                            <a onclick="abrirMenu()"  href="#">
-                                <img width="50px" src="assets/menu.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                    
-                </nav>
-            </header>
-
-            <nav class="sidenavest" id="sidenav">
-      
-                <ul class="nav-list">
-          
-                  <li class="cancelar"  onclick="fecharMenu()">
-                      <img width="35px" src="assets/cancelar.png" alt="">
-                  </li>
-          
-                  <li data-text="Home">
-                    <a onclick="fecharMenu()" href="#">Home</span></a>
-                  </li>
-          
-                  <li data-text="Sobre">
-                    <a onclick="fecharMenu()" href="#section1">Sobre</a>
-                  </li>
-          
-                  <li data-text="Projetos">
-                    <a onclick="fecharMenu()" href="#section2">Projetos</a>
-                  </li>
-
-                  <li data-text="Contato">
-                    <a onclick="fecharMenu()" href="#section3">Contato</a>
-                  </li>
-          
-                  <li data-text="Links Uteis">
-                    <a onclick="fecharMenu()" target="_blank" href="https://beacons.ai/kauachaves.dev">Links Úteis</a>
-                  </li>
-                  
-                </ul>
-              </nav>
-
-
-            <div data-aos="fade-up" class="textos">
-
-                
-
-                <h3>Olá, me chamo  <span>Kauã</span> e sou um:</h3>
-                <h2 data-text="WEB">WEB</h2>
-                <h2 data-text="DEVELOPER">DEVELOPER</h2>
-                <p>Fullstack  - Javascript (React.js | Node.js)</p>
-            </div>
-
-            <div data-aos="fade-left" class="lateral">
-                <h4>Entre em Contato</h4>
-                <hr>
-                <div class="social-icons">
-                <a target="_blank" href="https://www.instagram.com/kaua.sampaio.76/">
-                  <img class="img-social img-insta" src="assets/instagram.svg" alt="">
-                </a>
-                
-                <a target="_blank" href="https://www.linkedin.com/in/kau%C3%A3-chaves-793441247/">
-                  <img class="img-social img-link" src="assets/linkedin.svg" alt="">
-                </a>
-                
-                <a target="_blank" href="https://wa.me/5588996009602">
-                  <img class="img-social img-wpp" src="assets/whatsapp.svg" alt="">
-                </a>
-                
-                </div>
-                
-            </div>
-
-
-            <div class="embaixo">
-
-              <div class="embaixo-itens">
-                <a href="#section1">
-                  <h4>Descubra mais sobre mim</h4>
-                  <img width="25px" src="assets/seta-para-baixo.png" alt="">
-                </a>
-              </div>
-            </div>
-
-        </div>
-        
+    <div class="hero">
+      <h3>Bem vindo ao meu portfólio</h3>
+      <h1>Me chamo <b>Kauã Chaves.</b></h1>
+      <p>Soluciono problemas através de <u>código</u>.</p>
     </div>
+   
 
-    <section  class="section1 section-sytle" id="section1">
-      <div data-aos="fade-up" class="titulo">
-        <h2>Sobre mim</h2>
-      </div>
-
-      <div data-aos="fade-up" class="texto-img">
-        <div class="texto">
-          <p>Olá! Meu nome é Kauã Chaves e tenho uma profunda paixão por Desenvolvimento em geral (Web, Desktop, Mobile), entretanto meu “xodó” é o Desenvolvimento Web, pois é onde já possuo uma boa familiaridade. Meu interesse por desenvolver para a web começou em 2020, onde tive meus primeiros contatos com Html e Css com o saudoso Prof. Guanabara.
-          </p>
-          <br>
-          <p>Atualmente tenho avançado na área com a linguagem Javascript, onde venho utilizando os frameworks <u>Node.js e React.js</u> para estruturalizar todo o back-end e Front-end do site/sistema web, procurando entregar uma aplicação funcional, completa, responsiva, usual e útil para soluções de problemas reais.</p>
-          <br>
-          <p>Juntamente, estou cursando <u>Análise e Desenvolvimento de Sistemas</u> na UNOPAR (Universidade Norte do Paraná), já cursando o 2º semestre do curso venho adiquirindo vários conhecimentos em Engenharia de Software, Modelagem de Dados, Modelagem de Sistemas, entre outras ciências essenciais da área.</p>
-        </div>
-          
-        
-        <div data-aos="fade-left" class="imagem">
-          <div class="filtro"></div>
-          <div class="borda"></div>
-          <img width="280px" src="assets/foto-perfil.jpg" alt="">
-        </div>
-
-      </div>
+    <div class="shape sh1"></div>
+    <div class="shape sh2"></div>
 
 
 
-      <div data-aos="fade-up" class="titulo sobre-tech">
-        <h2 style="font-size: 35px;">Tecnologias que uso no dia a dia</h2>
-      </div>
+  </header>
 
-      <div data-aos="zoom-in-up" class="texto-img">
-        <div class="imagens-tech"> 
-          <img width="60px" src="assets/html.png" alt="">
-          <img width="60px" src="assets/css.png" alt="">
-          <img width="60px" src="assets/js.png" alt="">
-          <img width="60px" src="assets/git.png" alt="">
-          <img width="80px" src="assets/bootstrap.png" alt="">
-          <br>
-          <!--<img width="80px" src="assets/django.png" alt="">-->
-          <img width="100px" src="assets/node.png" alt="">
-          <img width="80px" src="assets/git-hub.png" alt="">
-          <img width="80px" src="assets/python.png" alt="">
-          <img width="70px" src="assets/vscode.png" alt="">
-        </div>
-          
-
-      </div>
-
-
-
-    </section>
-
-    <section  class="section1 section-sytle" id="section2">
-      <div data-aos="fade-up" style="margin-bottom: 0px; display: block;" class="titulo">
-        <h2 style="text-align: center;">Projetos que Desenvolvi</h2>
-        <p class="par-mob" style="text-align: center; color:white;"><i>Clique sobre a imagem para ver detalhes</i></p>
-      </div>
-
-      <div class="projetos">
-
-        <div data-aos="fade-right" class="card">
-          <div class="circle"></div>
-          <div class="content-card">
-            <h2>Projeto Clone Netflix</h2>
-            <p>Neste projeto de Front-end utilizei conhecimentos de Html e Css/Bootstrap para construir um clone da interface (UI) da Netflix, contando com página Landing Page, Home da plataforma e página de login.</p>
-            <a target="_blank" href="https://github.com/Kauasampaio96/Netflix-clone">Repositório do Projeto</a>
-            <a target="_blank" href="https://clonenetflixkauachaves.netlify.app/">Acesse para melhor vizualizar</a>
-          </div>
-          <img src="assets/projeto1.png">
-        </div>
-
-
-        <div data-aos="fade-left" class="card">
-          <div class="circle"></div>
-          <div class="content-card">
-            <h2>Projeto Clone Spotify</h2>
-            <p>Neste projeto de Front-end utilizei conhecimentos de Html e Css/Bootstrap para construir um clone da interface (UI) do Spotify, contando com página Landing Page com Sliders, Página de Login/Cadastro e página Premium.</p>
-            <a target="_blank" href="https://github.com/Kauasampaio96/Spotify">Repositório do Projeto</a>
-            <a target="_blank" href="https://kauasampaio96.github.io/pj-spotify-front-end/">Acesse para melhor vizualizar</a>
-          </div>
-          <img src="assets/projeto2.png">
-        </div>
-
-
-      </div>
-
-
-      <div class="projetos">
-
-        <div data-aos="fade-right" class="card">
-          <div class="circle"></div>
-          <div class="content-card">
-            <h2>Sistema Bancário em Python</h2>
-            <p>Neste projeto Usei Python "puro" utilizando de técnicas de POO, onde é possível fazer saques, depósitos e também transferências, criar contas e Login autenticado no Banco de Dados.</p>
-            <a target="_blank" href="https://github.com/Kauasampaio96/Sis-bancario-poo">Repositório do Projeto</a>
-            <a target="_blank" href="https://www.youtube.com/watch?v=hFpQ-yKPNO4">Acesse para melhor vizualizar</a>
-          </div>
-          <img src="assets/projeto3.png">
-        </div>
-
-
-        <div data-aos="fade-left" class="card">
-          <div class="circle"></div>
-          <div class="content-card">
-            <h2>Projeto Crud Django</h2>
-            <p>Neste projeto Fullstack utilizei conhecimentos Tecnologias Front-end (Javascript, Html, Css) e também Tecnologias Back-end (Python - Django), O projeto é um sistema completo com sistema de autenticação de usuário e manipulação de banco de dados!.</p>
-            <a target="_blank" href="https://github.com/Kauasampaio96/Pj-crud-Django">Repositório do Projeto</a>
-            <a target="_blank" href="https://www.youtube.com/watch?v=6uxSZOiL5hg&t=101s">Acesse para melhor vizualizar</a>
-          </div>
-          <img src="assets/projeto4.png">
-        </div>
-
-
-
-        
-
-
-      </div>
-
-
-      <div class="projetos">
-
-        <div data-aos="fade-right" class="card">
-          <div class="circle"></div>
-          <div class="content-card">
-            <h2>Landing Page - Galeria</h2>
-            <p>Neste projeto utilizei um pré-processador de CSS, o SASS se mostrou muito útil e funcional pois apresenta diversas formas de se desenvolver de maneira mais ágil.</p>
-            <a target="_blank" href="https://github.com/Kauasampaio96/Projeto-Sass-Front-end">Repositório do Projeto</a>
-            <a target="_blank" href="https://projeto-sass.netlify.app/">Acesse para melhor vizualizar</a>
-          </div>
-          <img src="assets/projeto5.png">
-        </div>
-
-      </div>
-
-
-
-    </section>
-
-    <section  class="section1 section-sytle" id="section3">
-      <div data-aos="fade" style="margin-bottom: 50px;" class="titulo">
-        <h2>Entre em contato!</h2>
-      </div>
-
-      <div data-aos="zoom-in" class="form-pai">
-        
-        <div class="form-box">
-
-          <h3>Me envie um e-mail :)</h3>
-          <form method="POST" action="https://formsubmit.co/kaua.sampaio.dev@gmail.com">
-
-            <div class="input-single">
-              <img width="32px" src="assets/perfil.png" alt="">
-              <!--<label for="nome">Seu nome:</label>-->
-              <input type="text" name="Nome" placeholder="Seu nome" required>
-            </div>
-
-            <div class="input-single">
-              <img width="32px" src="assets/email.png" alt="">
-              <!--<label for="nome">Seu nome:</label>-->
-              <input type="email" name="E-mail" placeholder="Seu email" required>
-            </div>
-
-            <div class="input-single">
-              <!--<label for="nome">Seu nome:</label>-->
-              <textarea name="Mensagem" placeholder="Sua mensagem" cols="30" rows="10" required></textarea>
-            </div>
-
-            <div class="div-btn">
-              <button class="btn-custom">Enviar</button>
-            </div>
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://kauachaves-portfolio.netlify.app/#section3">
-            
-
-          </form>
-
-          <h3 class="second-h3" style="margin-bottom: 35px;">Ou entre em contato:</h3>
-
-          <div class="wrapper">
-
-            <div class="icon instagram">
-              <div class="tooltip">Instagram</div>
-              <a target="_blank" href="https://www.instagram.com/kaua.sampaio.76/">
-                <span><i class="fab fa-instagram"></i></span>
-              </a>
-            </div>
-
-            <div class="icon whatsapp">
-              <div class="tooltip">Whatsapp</div>
-              <a target="_blank" href="https://wa.me/5588996009602">
-                <span><i class="fab fa-whatsapp"></i></span>
-              </a>
-            </div>
-
-            <div class="icon linkedin">
-              <div class="tooltip">LinkedIn</div>
-              <a target="_blank" href="https://www.linkedin.com/in/kau%C3%A3-chaves-793441247/">
-                <span><i class="fab fa-linkedin"></i></span>
-              </a>
-            </div>
-
-            <div class="icon github">
-              <div class="tooltip">Github</div>
-              <a target="_blank" href="https://github.com/Kauasampaio96">
-                <span><i class="fab fa-github"></i></span>
-              </a>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-<script src="js/script.js"></script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
