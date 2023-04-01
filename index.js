@@ -1,6 +1,6 @@
 gsap.from('.navbar', {
   duration: 1,
-  delay: 0.5,
+  delay: 1,
   ease: "back.out(1.7)",
   y: '-100%'
 })
