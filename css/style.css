@@ -8,6 +8,18 @@ body {
   height: 100vh;
   background-color: #0E0C0B;
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(168.18deg, rgba(240, 85, 0, 0.5) 27.05%, rgba(192, 0, 240, 0.5) 109.49%);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: blur(50px);
 }
 
 header {
@@ -27,31 +39,19 @@ header .shape {
   z-index: -1;
 }
 @keyframes naturalshape1 {
-  0% {
-    transform: translatey(0px);
+  0%, 100% {
+    transform: translatey(-100px);
   }
-  20% {
-    transform: translatey(40px);
-  }
-  80% {
-    transform: translatey(-40px);
-  }
-  100% {
-    transform: translatey(0px);
+  50% {
+    transform: translatey(100px);
   }
 }
 @keyframes naturalshape2 {
-  0% {
-    transform: translatey(0px);
+  0%, 100% {
+    transform: translatey(100px);
   }
-  20% {
-    transform: translatey(-40px);
-  }
-  80% {
-    transform: translatey(40px);
-  }
-  100% {
-    transform: translatey(0px);
+  50% {
+    transform: translatey(-100px);
   }
 }
 header .sh1 {
@@ -131,10 +131,6 @@ header .hero {
   width: 80%;
   margin: auto;
   color: white;
-  font-size: 1.5rem;
-  font-weight: 100;
-  position: relative;
-  top: -10px;
 }
 header .hero h3 {
   font-family: "Montserrat", sans-serif;
@@ -142,6 +138,7 @@ header .hero h3 {
   font-weight: 200;
   font-style: italic;
   letter-spacing: 1.56px;
+  font-size: 1.3rem;
 }
 header .hero h1 {
   font-size: 4.5rem;
@@ -151,18 +148,22 @@ header .hero h1 b {
   background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: bg-position 10s infinite linear;
+  animation: bg-position 3s infinite linear;
 }
 @keyframes bg-position {
-  0% {
-    background-position: 0%;
+  0%, 100% {
+    background-size: 250%;
+    background-position: left center;
   }
   50% {
-    background-position: 100%;
+    background-position: right center;
   }
-  100% {
-    background-position: 0%;
-  }
+}
+header .hero p {
+  font-size: 1.5rem;
+  font-weight: 100;
+  position: relative;
+  top: -15px;
 }
 
 /*# sourceMappingURL=style.css.map */

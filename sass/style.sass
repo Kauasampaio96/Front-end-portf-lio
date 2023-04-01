@@ -2,6 +2,16 @@
 
 @include u.reset
 
+.circle
+  width: 100px
+  height: 100px
+  background: linear-gradient(168.18deg, rgba(240, 85, 0, 0.5) 27.05%, rgba(192, 0, 240, 0.500) 109.49%)
+  border-radius: 50%
+  position: absolute
+  transform: translate(-50%, -50%)
+  z-index: -1
+  filter: blur(50px)
+
 
 header
   height: 100vh
@@ -23,31 +33,18 @@ header
     
 
   @keyframes naturalshape1 
-    0%
-      transform: translatey(0px)
+    0%, 100%
+      transform: translatey(-100px)
 
-    20%
-      transform: translatey(40px)  
-    
-    80%
-      transform: translatey(-40px)
-
-    100%
-      transform: translatey(0px)
+    50%
+      transform: translatey(100px)
 
   @keyframes naturalshape2 
-    0%
-      transform: translatey(0px)
+    0%, 100%
+      transform: translatey(100px)
 
-    20%
-      transform: translatey(-40px)  
-    
-    80%
-      transform: translatey(40px)
-
-    100%
-      transform: translatey(0px)
-          
+    50%
+      transform: translatey(-100px)
 
 
   .sh1
@@ -138,6 +135,7 @@ header
       font-weight: 200
       font-style: italic
       letter-spacing: 1.56px
+      font-size: 1.3rem
 
     h1
       font-size: 4.5rem
@@ -147,23 +145,23 @@ header
         background: linear-gradient(90deg, rgba(241, 93, 26, 1), rgba(213, 44, 168, 1))
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
-        animation: bg-position 10s infinite linear
+        animation: bg-position 3s infinite linear
 
       @keyframes bg-position
-        0%
-          background-position: 0% 
+        0%, 100%
+          background-size: 250% 
+          background-position: left center
 
         50%
-          background-position: 100%
+          background-position: right center
 
-        100%
-          background-position: 0%
+
 
     p
-    font-size: 1.5rem
-    font-weight: 100
-    position: relative
-    top: -10px
+      font-size: 1.5rem
+      font-weight: 100
+      position: relative
+      top: -15px
 
     
            
