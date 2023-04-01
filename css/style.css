@@ -58,12 +58,12 @@ header .sh1 {
   transform: rotate(240deg);
   bottom: -80px;
   left: -350px;
-  animation: naturalshape1 infinite 8s linear;
+  animation: naturalshape1 infinite 15s linear alternate;
 }
 header .sh2 {
   top: 100px;
   right: -350px;
-  animation: naturalshape2 infinite 8s linear;
+  animation: naturalshape2 infinite 15s linear alternate;
 }
 header .navbar {
   width: 100%;
@@ -80,8 +80,13 @@ header .navbar-list {
   list-style: none;
   display: flex;
 }
+@media (max-width: 950px) {
+  header .navbar-list {
+    display: none;
+  }
+}
 header .navbar-list li {
-  margin: 0 28px;
+  margin: 0 20px;
   position: relative;
 }
 header .navbar-list li::after {
@@ -101,6 +106,11 @@ header .navbar-list li a {
   color: white;
   font-weight: 300;
   text-decoration: none;
+}
+@media (max-width: 950px) {
+  header .navbar-icons {
+    display: none;
+  }
 }
 header .navbar-icons a {
   color: white;
@@ -123,6 +133,66 @@ header .navbar-icons a .fa-whatsapp:hover {
 header .navbar-icons a .fa-linkedin-in:hover {
   color: #0e76a8;
 }
+header .navbar-menu-icon {
+  display: none;
+  position: absolute;
+  right: 20px;
+}
+@media (max-width: 950px) {
+  header .navbar-menu-icon {
+    display: block;
+  }
+}
+header .navbar-menu-icon img {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+}
+header .side-navbar {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(14, 12, 11, 0.7058823529);
+  backdrop-filter: blur(20px);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+header .side-navbar .close-icon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+header .side-navbar .navbarmob-list {
+  width: 100%;
+  text-align: left;
+  list-style: none;
+  height: 300px;
+  margin-bottom: 150px;
+}
+header .side-navbar .navbarmob-list li {
+  margin: 50px 0;
+  text-align: center;
+}
+header .side-navbar .navbarmob-list li:last-of-type {
+  margin-top: 70px;
+}
+header .side-navbar .navbarmob-list li i {
+  margin: 0 40px;
+}
+header .side-navbar .navbarmob-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
 header .hero {
   display: flex;
   flex-direction: column;
@@ -131,6 +201,11 @@ header .hero {
   width: 80%;
   margin: auto;
   color: white;
+}
+@media (max-width: 1150px) {
+  header .hero {
+    width: 100%;
+  }
 }
 header .hero h3 {
   font-family: "Montserrat", sans-serif;
@@ -148,7 +223,7 @@ header .hero h1 b {
   background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: bg-position 3s infinite linear;
+  animation: bg-position 2.5s infinite linear;
 }
 @keyframes bg-position {
   0%, 100% {

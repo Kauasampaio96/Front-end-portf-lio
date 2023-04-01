@@ -15,8 +15,6 @@ gsap.from('.hero', {
   
 })
 
-
-
 const circle = document.querySelector('.circle')
 
 const moveCircle = (e) => {
@@ -29,4 +27,22 @@ const moveCircle = (e) => {
 }
 
 window.addEventListener('mousemove', moveCircle)
+
+
+// Mobile Menu
+
+const menuIcon = document.getElementById('menu-icon')
+const closeIcon = document.querySelector('.close-icon')
+const sideNav = document.querySelector('.side-navbar')
+let open = false
+
+menuIcon.addEventListener('click', () => {
+  sideNav.style.right = '0'
+  
+})
+
+closeIcon.addEventListener('click', () => {
+  sideNav.style.right = '-100%'
+  
+})
 

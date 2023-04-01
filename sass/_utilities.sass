@@ -10,3 +10,13 @@
     background-color: #0E0C0B
     font-family:  'Poppins', sans-serif
     overflow: hidden
+
+
+@mixin responsive
+  @media (max-width: 1150px)
+    @content
+
+
+@mixin responsive-sm
+  @media (max-width: 950px)
+    @content
