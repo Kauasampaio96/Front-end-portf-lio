@@ -90,7 +90,9 @@
       <div class="hero">
         <h3>Bem vindo ao meu portfólio</h3>
         <h1>Me chamo <b>Kauã Chaves.</b></h1>
-        <p>Soluciono problemas através de <u>código</u>.</p>
+        <div class="hero-p-box">
+          <span class="hero-span"></span>
+        </div>
       </div>
     
 
@@ -104,11 +106,24 @@
   </div>
 
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
   <script>
-    AOS.init({
-      duration: 1500,
-    });
+    var typingEffect = new Typed('.hero-span', {
+      strings : [
+        'Soluciono problemas através de <u>código</u>.',
+        'Busco sempre entregar projetos de <u>qualidade</u>.', 
+        'Curso Análise e Desevolvimento de Sistemas (<u>UNOPAR</u>).',
+        'Sou apaixonado por desenvolver <u>software</u>.',
+        'Sou motivado por <u>desafios</u>.'
+        ],
+      backDelay: 1000,
+      typeSpeed: 40,
+      backSpeed: 60,
+      loop: true,
+
+      //showCursor: false
+      
+    })
   </script>
 </body>
 </html>

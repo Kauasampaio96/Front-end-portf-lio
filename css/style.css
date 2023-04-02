@@ -264,17 +264,19 @@ header .hero h1 b {
     background-position: right center;
   }
 }
-header .hero p {
+header .hero .hero-p-box {
+  text-align: center;
+}
+header .hero .hero-p-box span {
   font-size: 1.5rem;
   font-weight: 100;
   position: relative;
   top: -15px;
 }
 @media (max-width: 950px) {
-  header .hero p {
+  header .hero .hero-p-box span {
     font-size: 1rem;
     top: 5px;
-    text-align: center;
   }
 }
 

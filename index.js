@@ -6,7 +6,7 @@ gsap.from('.navbar', {
 })
 
 gsap.from('.hero', {
-  duration: 2.5,
+  duration: 2,
   delay: 0.5,
   ease: "power4",
   opacity: 0,
