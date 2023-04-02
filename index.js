@@ -6,13 +6,22 @@ gsap.from('.navbar', {
 })
 
 gsap.from('.hero', {
-  duration: 2,
-  delay: 0.5,
+  duration: 3,
+  delay: 1,
   ease: "power4",
   opacity: 0,
   x: '-8%',
   skewX: 20
   
+})
+
+gsap.from('.link-ancora', {
+  duration: 2,
+  delay: 1.5,
+  ease: "power4",
+  opacity: 0,
+  bottom: '-100px',
+
 })
 
 const circle = document.querySelector('.circle')
@@ -34,15 +43,24 @@ window.addEventListener('mousemove', moveCircle)
 const menuIcon = document.getElementById('menu-icon')
 const closeIcon = document.querySelector('.close-icon')
 const sideNav = document.querySelector('.side-navbar')
+const navbarmobLinks = document.querySelectorAll('.navbarmob-link')
 let open = false
 
 menuIcon.addEventListener('click', () => {
-  sideNav.style.right = '0'
+  window.scrollTo(0,0)
+  sideNav.style.top = '0'
   
 })
 
+navbarmobLinks.forEach(element => {
+  element.addEventListener('click', () => {
+    sideNav.style.top = '-100vh'
+  })
+})
+
+
 closeIcon.addEventListener('click', () => {
-  sideNav.style.right = '-100vw'
+  sideNav.style.top = '-100vh'
   
 })
 

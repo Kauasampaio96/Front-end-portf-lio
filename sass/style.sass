@@ -22,7 +22,6 @@ header
   position: relative
   display: flex
   justify-content: center
-  overflow-x: hidden
 
   
   .shape
@@ -83,8 +82,9 @@ header
     justify-content: space-between
     align-items: center
     position: fixed
+    z-index: 9
     border-bottom: 1px solid #90909030
-    backdrop-filter: blur(2px)
+    backdrop-filter: blur(5px)
       
 
     &-list
@@ -159,12 +159,12 @@ header
   .side-navbar
     position: absolute
     top: 0
-    right: -100%
+    top: -100vh
     width: 100vw
     height: 100vh
     background: #0e0c0bb4
     backdrop-filter: blur(20px)
-    z-index: 2
+    z-index: 10
     display: flex
     flex-direction: column
     justify-content: center
@@ -268,6 +268,147 @@ header
         @include u.responsive-sm
           font-size: 1rem
           top: 5px
+
+//Link Ancora
+
+.link-ancora
+  position: absolute
+  bottom: 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 150px
+  animation: link-animation 5s infinite linear 
+
+  .link-ancora-line
+    height: 25px
+    width: 1px
+    background-color: #ffffff6e
+    position: relative
+    bottom: -35px
+    left: -2px
+
+  a
+    color: white
+    transform: rotate(90deg)
+    text-decoration: none
+
+@keyframes link-animation
+  0%, 100%
+    transform: translateY(0)
+
+  50%
+    transform: translateY(-10px)
+
+
+//Section 1
+
+.sc1-about
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 100vh
+
+  @include u.responsive
+    height: 100%
+    padding: 100px 0
+
+  &-flexbox
+    display: flex
+    justify-content: space-around
+    align-items: center
+    width: 95%
+    max-width: 1100px
+
+    @include u.responsive
+      flex-direction: column
+    
+    .img-box
+      width: 30%
+      display: flex
+
+      @include u.responsive
+        width: 60%
+        height: 70%
+
+      @include u.responsive-ssm
+        width: 80%
+        height: 50%
+      
+      
+      img
+        width: 100%
+        border-radius: 20px
+        border: 1px solid  #f15e1ac3
+        box-shadow: #f15e1a61 0px 7px 29px 0px
+        filter: grayscale(100%)
+        transition: .5s
+        cursor: pointer
+        object-fit: cover
+
+        &:hover
+          filter: grayscale(0%)
+
+        @include u.responsive
+          filter: grayscale(0%)
+          
+      
+        
+
+    .text-box
+      width: 55%
+      color: #ffffffe9
+      display: flex
+      flex-direction: column
+      align-items: start
+      justify-content: center
+
+      @include u.responsive
+        margin-top: 70px
+        width: 95%
+
+      
+      h1
+        font-size: 2.5rem
+        margin-bottom: 10px
+
+        @include u.responsive
+          font-size: 2rem
+          margin-bottom: 5px
+
+        b
+          background: linear-gradient(90deg, rgba(241, 93, 26, 1), rgba(213, 44, 168, 1))
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+          animation: bg-position 2.5s infinite linear
+
+      p
+        margin-bottom: 15px
+        text-align: justify
+
+        @include u.responsive-sm
+          text-align: left
+          line-height: 25px
+          font-size: 0.95rem
+
+      .cv-btn
+        display: inline-block
+        color: white
+        text-decoration: none
+        padding: 15px 20px
+        background: linear-gradient(90deg, rgba(241, 93, 26, 1), rgba(213, 44, 168, 1))
+        border-radius: 5px
+        margin-top: 10px
+        transition: .5s all
+
+        @include u.responsive
+          font-size: 1.250rem
+
+        &:hover
+          transform: scale(1.05, 1.05)
+    
         
 
     
