@@ -30,6 +30,10 @@ header
     position: absolute
     z-index: -1
 
+    @include u.responsive-sm
+      width: 400px
+      height: 400px
+
     
 
   @keyframes naturalshape1 
@@ -51,12 +55,18 @@ header
     transform: rotate(240deg)
     bottom: -80px
     left: -350px
-    animation: naturalshape1 infinite 15s linear alternate
+    animation: naturalshape1 infinite 10s linear alternate
+
+    @include u.responsive-sm
+      left: -200px
 
   .sh2
     top: 100px
     right: -350px
-    animation: naturalshape2 infinite 15s linear alternate
+    animation: naturalshape2 infinite 10s linear alternate
+
+    @include u.responsive-sm
+      right: -200px
 
   .navbar
     width: 100%
@@ -178,7 +188,7 @@ header
           margin-top: 70px
           
         i
-          margin: 0 40px
+          margin: 0 20px
 
         a
           color: white
@@ -200,6 +210,7 @@ header
 
     @include u.responsive
       width: 100%
+      padding: 0 15px
 
     h3
       font-family: 'Montserrat', sans-serif
@@ -209,9 +220,18 @@ header
       letter-spacing: 1.56px
       font-size: 1.3rem
 
+      @include u.responsive-sm
+        font-size: 1rem
+        margin-bottom: 18px
+
     h1
       font-size: 4.5rem
       font-weight: 600
+
+      @include u.responsive-sm
+        font-size: 2.8rem
+        line-height: 50px
+        text-align: center
 
       b
         background: linear-gradient(90deg, rgba(241, 93, 26, 1), rgba(213, 44, 168, 1))
@@ -234,6 +254,12 @@ header
       font-weight: 100
       position: relative
       top: -15px
+
+      @include u.responsive-sm
+        font-size: 1rem
+        top: 5px
+        text-align: center
+      
 
     
            

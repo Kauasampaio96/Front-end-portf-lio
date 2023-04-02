@@ -38,6 +38,12 @@ header .shape {
   position: absolute;
   z-index: -1;
 }
+@media (max-width: 950px) {
+  header .shape {
+    width: 400px;
+    height: 400px;
+  }
+}
 @keyframes naturalshape1 {
   0%, 100% {
     transform: translatey(-100px);
@@ -58,12 +64,22 @@ header .sh1 {
   transform: rotate(240deg);
   bottom: -80px;
   left: -350px;
-  animation: naturalshape1 infinite 15s linear alternate;
+  animation: naturalshape1 infinite 10s linear alternate;
+}
+@media (max-width: 950px) {
+  header .sh1 {
+    left: -200px;
+  }
 }
 header .sh2 {
   top: 100px;
   right: -350px;
-  animation: naturalshape2 infinite 15s linear alternate;
+  animation: naturalshape2 infinite 10s linear alternate;
+}
+@media (max-width: 950px) {
+  header .sh2 {
+    right: -200px;
+  }
 }
 header .navbar {
   width: 100%;
@@ -186,7 +202,7 @@ header .side-navbar .navbarmob-list li:last-of-type {
   margin-top: 70px;
 }
 header .side-navbar .navbarmob-list li i {
-  margin: 0 40px;
+  margin: 0 20px;
 }
 header .side-navbar .navbarmob-list li a {
   color: white;
@@ -205,6 +221,7 @@ header .hero {
 @media (max-width: 1150px) {
   header .hero {
     width: 100%;
+    padding: 0 15px;
   }
 }
 header .hero h3 {
@@ -215,9 +232,22 @@ header .hero h3 {
   letter-spacing: 1.56px;
   font-size: 1.3rem;
 }
+@media (max-width: 950px) {
+  header .hero h3 {
+    font-size: 1rem;
+    margin-bottom: 18px;
+  }
+}
 header .hero h1 {
   font-size: 4.5rem;
   font-weight: 600;
+}
+@media (max-width: 950px) {
+  header .hero h1 {
+    font-size: 2.8rem;
+    line-height: 50px;
+    text-align: center;
+  }
 }
 header .hero h1 b {
   background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
@@ -239,6 +269,13 @@ header .hero p {
   font-weight: 100;
   position: relative;
   top: -15px;
+}
+@media (max-width: 950px) {
+  header .hero p {
+    font-size: 1rem;
+    top: 5px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
