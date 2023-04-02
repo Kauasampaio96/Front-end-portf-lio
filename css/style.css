@@ -21,6 +21,11 @@ body {
   z-index: -1;
   filter: blur(50px);
 }
+@media (max-width: 550px) {
+  .circle {
+    display: none;
+  }
+}
 
 header {
   height: 100vh;
