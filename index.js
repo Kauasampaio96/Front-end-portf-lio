@@ -1,3 +1,5 @@
+// GSAP ANIMATIONS
+
 gsap.from('.navbar', {
   duration: 1,
   delay: 1,
@@ -64,3 +66,21 @@ closeIcon.addEventListener('click', () => {
   
 })
 
+//Scroll Top
+
+window.onscroll = () => {
+  scrollFunction()
+};
+
+function scrollFunction(){
+  if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
+    const scrollBtn = document.getElementById('scrollBtn')
+    scrollBtn.style.display='flex'
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo(0,0)
+    })
+  }
+  else{
+    document.getElementById('scrollBtn').style.display='none'
+  }
+}

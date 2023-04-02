@@ -43,6 +43,30 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.scrollbtn {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  background: linear-gradient(110deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  display: none;
+  box-shadow: rgba(241, 94, 26, 0.3803921569) 0px 7px 29px 0px;
+}
+@media (max-width: 1150px) {
+  .scrollbtn {
+    display: flex;
+  }
+}
+.scrollbtn i {
+  font-size: 1.2rem;
+}
+
 header {
   height: 100vh;
   overflow: hidden;
