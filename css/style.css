@@ -33,6 +33,7 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 header .shape {
   width: 650px;
