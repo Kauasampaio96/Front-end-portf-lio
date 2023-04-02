@@ -52,18 +52,18 @@ header .shape {
 }
 @keyframes naturalshape1 {
   0%, 100% {
-    transform: translatey(-100px);
+    transform: translatey(-10%);
   }
   50% {
-    transform: translatey(100px);
+    transform: translatey(10%);
   }
 }
 @keyframes naturalshape2 {
   0%, 100% {
-    transform: translatey(100px);
+    transform: translatey(10%);
   }
   50% {
-    transform: translatey(-100px);
+    transform: translatey(-10%);
   }
 }
 header .sh1 {
