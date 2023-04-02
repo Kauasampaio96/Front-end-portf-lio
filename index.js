@@ -42,7 +42,7 @@ menuIcon.addEventListener('click', () => {
 })
 
 closeIcon.addEventListener('click', () => {
-  sideNav.style.right = '-100%'
+  sideNav.style.right = '-100vw'
   
 })
 
