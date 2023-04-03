@@ -483,16 +483,12 @@ header .hero .hero-p-box span {
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
-@media (max-width: 1150px) {
-  .sc2-projects {
-    height: 100%;
-  }
+  height: 100%;
+  padding: 100px 0;
 }
 .sc2-projects .sc2-title {
   width: 80%;
   text-align: center;
-  padding-top: 100px;
   margin-bottom: 75px;
   font-size: 2.5rem;
   color: white;
