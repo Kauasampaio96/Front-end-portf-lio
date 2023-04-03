@@ -586,7 +586,6 @@ header .hero .hero-p-box span {
   justify-content: center;
   align-items: center;
   border-radius: 11px;
-  backdrop-filter: blur(1.5px);
 }
 .sc2-projects-box .project-single-text h1 {
   color: white;
