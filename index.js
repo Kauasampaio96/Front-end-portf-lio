@@ -1,3 +1,6 @@
+import dados from './projectdata.js'
+ 
+
 // GSAP ANIMATIONS
 
 gsap.from('.navbar', {
@@ -93,6 +96,33 @@ function scrollFunction(){
 
 // Projects
 
+dados.map( pj => {
+  const projectbox = document.querySelector('.sc2-projects-box')
+
+  const newProject =  document.createElement('div')
+  newProject.classList.add('project-single')
+
+  newProject.innerHTML = `
+    <div class="project-single-text">
+      <h1>${pj.title}</h1>
+      <ul>
+        ${pj.tecnologies}
+      </ul>
+    </div>
+`
+
+newProject.style.backgroundImage = `url('${pj.bgImage}')`
+  
+
+  projectbox.appendChild(newProject)
+
+})
+
+
+
+
+
+/*
 const projectSingle = document.querySelectorAll('.project-single')
 
 
@@ -107,6 +137,8 @@ projectSingle.forEach(pj => {
   pj.style.backgroundImage = `url('../assets/${titleFormated}.png')`
   
 })
+
+*/
 
 
 

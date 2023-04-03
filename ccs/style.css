@@ -560,7 +560,6 @@ header .hero .hero-p-box span {
   border-radius: 12px;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 @media (max-width: 950px) {
   .sc2-projects-box .project-single {
@@ -578,7 +577,7 @@ header .hero .hero-p-box span {
 }
 .sc2-projects-box .project-single-text {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7568627451);
+  background-color: rgba(0, 0, 0, 0.8274509804);
   width: 100%;
   height: 100%;
   display: flex;
@@ -586,13 +585,12 @@ header .hero .hero-p-box span {
   justify-content: center;
   align-items: center;
   border-radius: 11px;
-  backdrop-filter: blur(1.5px);
 }
 .sc2-projects-box .project-single-text h1 {
   color: white;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  background: linear-gradient(90deg, #f76c2c, #e83fbb);
+  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: bg-position 2.5s infinite linear;

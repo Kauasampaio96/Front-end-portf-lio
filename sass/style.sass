@@ -507,6 +507,7 @@ header
       border-radius: 12px
       background-size: cover
       background-position: center
+      background-repeat: no-repeat 
 
       @include u.responsive-sm
         width: 80%
@@ -520,7 +521,7 @@ header
 
       &-text
         text-align: center
-        background-color: #000000d3
+        background-color: #000000c1
         width: 100%
         height: 100%
         display: flex
@@ -528,12 +529,13 @@ header
         justify-content: center
         align-items: center
         border-radius: 11px
+        backdrop-filter: blur(1.5px)
 
         h1
           color: white
           font-size: 1.5rem
           margin-bottom: 10px
-          background: linear-gradient(90deg, rgba(241, 93, 26, 1), rgba(213, 44, 168, 1))
+          background: linear-gradient(90deg, #f76c2c, #e83fbb)
           -webkit-background-clip: text
           -webkit-text-fill-color: transparent
           animation: bg-position 2.5s infinite linear
