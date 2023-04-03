@@ -516,16 +516,12 @@ header .hero .hero-p-box span {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 1150px) {
   .sc2-projects .btntypes {
-    width: 90%;
-    max-width: 350px;
-  }
-}
-@media (max-width: 950px) {
-  .sc2-projects .btntypes {
-    flex-direction: column;
+    width: 95%;
+    padding: 10px;
   }
 }
 .sc2-projects .btntypes button {
@@ -544,11 +540,9 @@ header .hero .hero-p-box span {
 }
 @media (max-width: 950px) {
   .sc2-projects .btntypes button {
-    margin: 15px 0;
-    width: 95%;
-    max-width: 300px;
-    padding: 15px;
-    font-size: 1.125rem;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin: 10px 5px;
   }
 }
 .sc2-projects .btntypes button:hover {

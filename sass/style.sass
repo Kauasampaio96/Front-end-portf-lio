@@ -462,13 +462,13 @@ header
     display: flex
     justify-content: space-around
     align-items: center
+    flex-wrap: wrap
 
     @include u.responsive
-      width: 90%
-      max-width: 350px
+      width: 95%
+      padding: 10px
 
     @include u.responsive-sm
-      flex-direction: column
 
     button
       border: none
@@ -485,11 +485,9 @@ header
       transition: .3s
 
       @include u.responsive-sm
-        margin: 15px 0
-        width: 95%
-        max-width: 300px
-        padding: 15px
-        font-size: 1.125rem
+        padding: 10px
+        font-size: 0.9rem
+        margin: 10px 5px
 
       &:hover
         transform: scale(1.05, 1.05)
