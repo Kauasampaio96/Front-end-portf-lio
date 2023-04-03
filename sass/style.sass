@@ -27,11 +27,10 @@
   position: fixed
   bottom: 50px
   right: 40px
-  display: none
   box-shadow: #f15e1a61 0px 7px 29px 0px
-
-  @include u.responsive
-    display: flex
+  cursor: pointer
+  transition: .3s
+  opacity: 0
 
   i
     font-size: 1.2rem
@@ -103,9 +102,10 @@ header
     justify-content: space-between
     align-items: center
     position: fixed
-    z-index: 9
+    z-index: 5
     border-bottom: 1px solid #90909030
     backdrop-filter: blur(5px)
+    background-color: #0e0c0ba3
       
 
     &-list
@@ -181,10 +181,9 @@ header
     position: absolute
     top: 0
     top: -100vh
-    width: 100vw
+    width: 100%
     height: 100vh
-    background: #0e0c0bb4
-    backdrop-filter: blur(20px)
+    background: #0e0c0be6
     z-index: 10
     display: flex
     flex-direction: column
@@ -247,6 +246,7 @@ header
       font-style: italic
       letter-spacing: 1.56px
       font-size: 1.3rem
+      text-align: center
 
       @include u.responsive-sm
         font-size: 1rem
@@ -326,11 +326,7 @@ header
 //Section 1
 
 .sc1-about
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
-  height: 100vh
+  @include  u.section-format
 
   @include u.responsive
     height: 100%
@@ -429,6 +425,136 @@ header
 
         &:hover
           transform: scale(1.05, 1.05)
+
+
+//Section 2
+
+.sc2-projects
+  @include  u.section-format
+
+  @include u.responsive
+    height: 100%
+  
+  .sc2-title
+    width: 80%
+    text-align: center
+    padding-top: 100px
+    margin-bottom: 75px
+    font-size: 2.5rem
+    color: white
+
+    @include u.responsive-sm
+      width: 95%
+      margin-bottom: 50px
+
+    b
+      background: linear-gradient(90deg, rgba(241, 93, 26, 1), rgba(213, 44, 168, 1))
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      animation: bg-position 2.5s infinite linear
+
+
+  .btntypes
+    //background-color: red
+    padding: 10px 20px
+    border-radius: 25px
+    border: 1px solid #4545454e
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+    @include u.responsive
+      width: 90%
+      max-width: 350px
+
+    @include u.responsive-sm
+      flex-direction: column
+
+    button
+      border: none
+      padding: 10px 15px 
+      border-radius: 5px
+      background: linear-gradient(90deg, rgba(241, 93, 26, 1), rgba(213, 44, 168, 1))
+      color: white
+      margin: 0 15px
+      text-transform: uppercase
+      font-weight: 600
+      font-family: 'Montserrat'
+      position: relative
+      cursor: pointer
+      transition: .3s
+
+      @include u.responsive-sm
+        margin: 15px 0
+        width: 95%
+        max-width: 300px
+        padding: 15px
+        font-size: 1.125rem
+
+      &:hover
+        transform: scale(1.05, 1.05)
+
+
+  &-box
+    margin-top: 50px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    gap: 2rem
+    width: 90%
+    max-width: 1500px
+
+    .project-single
+      width: 300px
+      height: 200px
+      box-shadow: rgba(34, 34, 36, 0.221) 0px 3px 15px 0px
+      border-radius: 12px
+      background-size: cover
+      background-position: center
+
+      @include u.responsive-sm
+        width: 80%
+        height: 300px
+        margin-bottom: 30px
+
+      @include u.responsive-ssm
+        width: 95%
+        height: 250px
+        margin-bottom: 30px
+
+      &-text
+        text-align: center
+        background-color: #000000d3
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        border-radius: 11px
+
+        h1
+          color: white
+          font-size: 1.5rem
+          margin-bottom: 10px
+          background: linear-gradient(90deg, rgba(241, 93, 26, 1), rgba(213, 44, 168, 1))
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+          animation: bg-position 2.5s infinite linear
+
+        ul
+          display: flex
+          list-style: none
+          
+          li
+            margin: 0 5px
+            
+            i
+              font-size: 1.250rem
+              color: white
+
+
+
     
         
 

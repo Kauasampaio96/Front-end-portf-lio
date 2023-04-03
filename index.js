@@ -46,24 +46,30 @@ const menuIcon = document.getElementById('menu-icon')
 const closeIcon = document.querySelector('.close-icon')
 const sideNav = document.querySelector('.side-navbar')
 const navbarmobLinks = document.querySelectorAll('.navbarmob-link')
-let open = false
+const navBar = document.getElementById('navbar')
+
 
 menuIcon.addEventListener('click', () => {
-  window.scrollTo(0,0)
+  
+  //window.scrollTo(0,0)
   sideNav.style.top = '0'
+  navBar.style.justifyContent = 'center'
+  menuIcon.style.display = 'none'
   
 })
 
 navbarmobLinks.forEach(element => {
   element.addEventListener('click', () => {
     sideNav.style.top = '-100vh'
+    menuIcon.style.display = 'block'
   })
 })
 
 
 closeIcon.addEventListener('click', () => {
   sideNav.style.top = '-100vh'
-  
+  menuIcon.style.display = 'block'
+  navBar.style.justifyContent = 'space-between'
 })
 
 //Scroll Top
@@ -75,12 +81,43 @@ window.onscroll = () => {
 function scrollFunction(){
   if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
     const scrollBtn = document.getElementById('scrollBtn')
-    scrollBtn.style.display='flex'
+    scrollBtn.style.opacity='1'
     scrollBtn.addEventListener('click', () => {
       window.scrollTo(0,0)
     })
   }
   else{
-    document.getElementById('scrollBtn').style.display='none'
+    document.getElementById('scrollBtn').style.opacity='0'
   }
+}
+
+// Projects
+
+const projectSingle = document.querySelectorAll('.project-single')
+
+
+projectSingle.forEach(pj => {
+
+  const projectSingleTitle = pj.querySelector('.project-single-text h1').innerHTML
+
+  const titleFormated = formatTitle(projectSingleTitle)
+
+  console.log(titleFormated)
+
+  pj.style.backgroundImage = `url('../assets/${titleFormated}.png')`
+  
+})
+
+
+
+
+
+
+
+function formatTitle(title){
+  title = title.replace(' ', '')
+  title = title.toLowerCase()
+  title = title.replace(' ', '')
+
+  return title
 }

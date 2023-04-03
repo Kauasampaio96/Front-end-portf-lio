@@ -14,6 +14,8 @@ body {
   background-color: #0E0C0B;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 body::-webkit-scrollbar {
   width: 15px;
@@ -55,13 +57,10 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   bottom: 50px;
   right: 40px;
-  display: none;
   box-shadow: rgba(241, 94, 26, 0.3803921569) 0px 7px 29px 0px;
-}
-@media (max-width: 1150px) {
-  .scrollbtn {
-    display: flex;
-  }
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0;
 }
 .scrollbtn i {
   font-size: 1.2rem;
@@ -134,9 +133,10 @@ header .navbar {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 9;
+  z-index: 5;
   border-bottom: 1px solid rgba(144, 144, 144, 0.1882352941);
   backdrop-filter: blur(5px);
+  background-color: rgba(14, 12, 11, 0.6392156863);
 }
 header .navbar-list {
   list-style: none;
@@ -214,10 +214,9 @@ header .side-navbar {
   position: absolute;
   top: 0;
   top: -100vh;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background: rgba(14, 12, 11, 0.7058823529);
-  backdrop-filter: blur(20px);
+  background: rgba(14, 12, 11, 0.9019607843);
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -277,6 +276,7 @@ header .hero h3 {
   font-style: italic;
   letter-spacing: 1.56px;
   font-size: 1.3rem;
+  text-align: center;
 }
 @media (max-width: 950px) {
   header .hero h3 {
@@ -475,6 +475,146 @@ header .hero .hero-p-box span {
 }
 .sc1-about-flexbox .text-box .cv-btn:hover {
   transform: scale(1.05, 1.05);
+}
+
+.sc2-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+@media (max-width: 1150px) {
+  .sc2-projects {
+    height: 100%;
+  }
+}
+.sc2-projects .sc2-title {
+  width: 80%;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 75px;
+  font-size: 2.5rem;
+  color: white;
+}
+@media (max-width: 950px) {
+  .sc2-projects .sc2-title {
+    width: 95%;
+    margin-bottom: 50px;
+  }
+}
+.sc2-projects .sc2-title b {
+  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: bg-position 2.5s infinite linear;
+}
+.sc2-projects .btntypes {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid rgba(69, 69, 69, 0.3058823529);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 1150px) {
+  .sc2-projects .btntypes {
+    width: 90%;
+    max-width: 350px;
+  }
+}
+@media (max-width: 950px) {
+  .sc2-projects .btntypes {
+    flex-direction: column;
+  }
+}
+.sc2-projects .btntypes button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  color: white;
+  margin: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Montserrat";
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (max-width: 950px) {
+  .sc2-projects .btntypes button {
+    margin: 15px 0;
+    width: 95%;
+    max-width: 300px;
+    padding: 15px;
+    font-size: 1.125rem;
+  }
+}
+.sc2-projects .btntypes button:hover {
+  transform: scale(1.05, 1.05);
+}
+.sc2-projects-box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1500px;
+}
+.sc2-projects-box .project-single {
+  width: 300px;
+  height: 200px;
+  box-shadow: rgba(34, 34, 36, 0.221) 0px 3px 15px 0px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 950px) {
+  .sc2-projects-box .project-single {
+    width: 80%;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 550px) {
+  .sc2-projects-box .project-single {
+    width: 95%;
+    height: 250px;
+    margin-bottom: 30px;
+  }
+}
+.sc2-projects-box .project-single-text {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8274509804);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 11px;
+}
+.sc2-projects-box .project-single-text h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: bg-position 2.5s infinite linear;
+}
+.sc2-projects-box .project-single-text ul {
+  display: flex;
+  list-style: none;
+}
+.sc2-projects-box .project-single-text ul li {
+  margin: 0 5px;
+}
+.sc2-projects-box .project-single-text ul li i {
+  font-size: 1.25rem;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

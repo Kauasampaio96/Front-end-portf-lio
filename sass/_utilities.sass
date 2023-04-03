@@ -16,6 +16,8 @@
     background-color: #0E0C0B
     font-family:  'Poppins', sans-serif
     overflow-x: hidden
+    scroll-snap-type: y mandatory
+    overflow-y: scroll
 
     &::-webkit-scrollbar
       width: 15px
@@ -30,7 +32,13 @@
 
       
 
-    
+@mixin section-format
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 100vh
+  
 
 
 
