@@ -620,7 +620,6 @@ header .hero .hero-p-box span {
   justify-content: center;
   align-items: center;
   border-radius: 11px;
-  backdrop-filter: blur(1.5px);
 }
 .sc2-projects-box .project-single-text h1 {
   color: white;
@@ -630,7 +629,6 @@ header .hero .hero-p-box span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: bg-position 2.5s infinite linear;
-  pointer-events: none;
 }
 .sc2-projects-box .project-single-text ul {
   display: flex;
