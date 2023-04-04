@@ -72,7 +72,10 @@ navbarmobLinks.forEach(element => {
 closeIcon.addEventListener('click', () => {
   sideNav.style.top = '-100vh'
   menuIcon.style.display = 'block'
-  navBar.style.justifyContent = 'space-between'
+  setTimeout(()=>{
+    navBar.style.justifyContent = 'space-between'
+  },500)
+  
 })
 
 //Scroll Top
@@ -94,6 +97,9 @@ function scrollFunction(){
   }
 }
 
+
+
+
 // Projects
 
 dados.map( pj => {
@@ -101,6 +107,7 @@ dados.map( pj => {
 
   const newProject =  document.createElement('div')
   newProject.classList.add('project-single')
+  newProject.style.backgroundImage = `url('${pj.bgImage}')`
 
   newProject.innerHTML = `
     <div class="project-single-text">
@@ -114,13 +121,74 @@ dados.map( pj => {
       </div>
     </div>
 `
-
-newProject.style.backgroundImage = `url('${pj.bgImage}')`
-  
-
   projectbox.appendChild(newProject)
 
 })
+
+// Modal
+
+const modal =  document.createElement('div')
+modal.classList.add('modal')
+
+modal.innerHTML = `
+  
+<img id="closeiconmodal" class="close-icon" src="assets/close.svg" alt="">
+
+<div class="modal-video">
+  <video autoplay muted controls loop src="assets/videos/clonenetflix.mp4"></video>
+
+</div>
+
+<div class="modal-text">
+
+  <h1>Crud Javascript</h1>
+
+  <p>Nesse projeto realizei um CRUD que nada mais é que uma sigla de operações em um banco de dados (Criar, Ler, Atualizar e Deletar).</p>
+
+  <p>Utilizei Javascript Puro para desenvolver toda a lógica da aplicação, onde inclui:</p>
+
+  <ul>
+    <li>• Abrir e fechar menu lateral</li>
+    <li>• Alterar tema (Dark, Light)</li>
+    <li>• Manipulação do banco de dados</li>
+    <li>• Validação de campos do formulário</li>
+    <li>• Abrir e fechar modal</li>
+  </ul>
+
+  <p>Fiz todo a estilização e responsividade com o pré processador de css: Sass.</p>
+</div>
+
+<div class="project-links">
+
+  <a href="#">Link do Repositório</a>
+
+  <a href="#">Hospedagem</a>
+
+</div>
+`
+
+const projectSingle = document.querySelectorAll('.project-single')
+
+projectSingle.forEach( pj=> {
+  pj.addEventListener('click', (e)=>{
+    var posY = e.clientY
+    console.log(posY)
+    modal.classList.add('active')
+    modal.style.top = posY + 'px'
+
+    document.querySelector('.sc2-projects-box').appendChild(modal)
+    console.log('passou por aq')
+
+    document.getElementById('closeiconmodal').addEventListener('click', ()=>{
+      modal.classList.remove('active')
+    })
+  })
+})
+
+
+
+
+
 
 
 
