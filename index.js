@@ -108,6 +108,10 @@ dados.map( pj => {
       <ul>
         ${pj.tecnologies}
       </ul>
+      <div class="infobar">
+        <p>${pj.title}</p>
+        <button>Ver Mais</button>
+      </div>
     </div>
 `
 

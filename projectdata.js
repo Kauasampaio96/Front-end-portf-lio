@@ -10,7 +10,26 @@ const dados = [
     <li><i class="fa-brands fa-sass"></i></li>
     <li><i class="fa-brands fa-figma"></i></li>
     `,
-    bgImage: '../assets/crudjavascript.png'
+    bgImage: '../assets/crudjavascript.png',
+    hospedagem: 'https://crud-js-personalizado.vercel.app/',
+    github: 'https://github.com/Kauasampaio96/CrudJs_Personalizado' ,
+    video: '../assets/videos/crudjs.mp4',
+    modalContent: `
+    <p>Nesse projeto realizei um CRUD que nada mais é que uma sigla de operações em um banco de dados (Criar, Ler, Atualizar e Deletar).</p>
+
+    <p>Utilizei Javascript Puro para desenvolver toda a lógica da aplicação, onde inclui:</p>
+
+    <ul>
+      <li>Abrir e fechar menu lateral</li>
+      <li>Alterar tema (Dark, Light)</li>
+      <li>Manipulação do banco de dados</li>
+      <li>Validação de campos do formulário</li>
+      <li>Abrir e fechar modal</li>
+    </ul>
+
+    <p>Fiz todo a estilização e responsividade com o pré processador de css: Sass.</p>
+    
+    `
   },
 
   {
@@ -23,7 +42,13 @@ const dados = [
       <li><i class="fa-brands fa-sass"></i></li>
       <li><i class="fa-brands fa-figma"></i></li>
     `,
-    bgImage: '../assets/projetorachi.png'
+    bgImage: '../assets/projetorachi.png',
+    hospedagem: 'https://rachi-project-kc.vercel.app/',
+    github: 'https://github.com/Kauasampaio96/rachi_project' ,
+    video: '../assets/videos/projetorachi.mp4',
+    modalContent: `
+    <p>Neste projeto desenvolvi um landing page totalmente responsiva para diferentes tamanhos de tela, utilizando de javascript para mudança de tema (Dark, Light), além de animações de acordo com o rolar da tela. Utilizei mais uma vez o pré processador de css: Sass, afim de reutilizar código e otimizar o processo de desenvolvimento.</p>
+    `
   },
 
   {
@@ -36,7 +61,13 @@ const dados = [
       <li><i class="fa-brands fa-sass"></i></li>
       <li><i class="fa-brands fa-figma"></i></li>
     `,
-    bgImage: '../assets/fabricademonstros.png'
+    bgImage: '../assets/fabricademonstros.png',
+    hospedagem: 'https://fabricademonstros.netlify.app/',
+    github: 'https://github.com/Kauasampaio96/web-design-fabrica' ,
+    video: '../assets/videos/fabricademonstros.mp4',
+    modalContent: `
+    <p>Neste projeto desenvolvi um landing page totalmente responsiva para diferentes tamanhos de tela, utilizando de javascript para mudança de tema (Dark, Light), além de animações de acordo com o rolar da tela. Utilizei mais uma vez o pré processador de css: Sass, afim de reutilizar código e otimizar o processo de desenvolvimento.</p>
+    `
   },
 
   {

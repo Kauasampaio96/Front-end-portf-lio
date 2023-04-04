@@ -31,6 +31,7 @@
   cursor: pointer
   transition: .3s
   opacity: 0
+  z-index: 20
 
   i
     font-size: 1.2rem
@@ -183,7 +184,7 @@ header
     top: -100vh
     width: 100%
     height: 100vh
-    background: #0e0c0be6
+    background: #050404e6
     z-index: 10
     display: flex
     flex-direction: column
@@ -437,13 +438,12 @@ header
   .sc2-title
     width: 80%
     text-align: center
-    margin-bottom: 75px
+    margin-bottom: 5px
     font-size: 2.5rem
     color: white
 
     @include u.responsive-sm
       width: 95%
-      margin-bottom: 50px
 
     b
       background: linear-gradient(90deg, rgba(241, 93, 26, 1), rgba(213, 44, 168, 1))
@@ -451,22 +451,38 @@ header
       -webkit-text-fill-color: transparent
       animation: bg-position 2.5s infinite linear
 
+  .sc2-subtitle
+    color: white
+    font-family: 'Montserrat', sans-serif
+    font-weight: 200
+    text-transform: uppercase
+    letter-spacing: 1.56px
+    text-align: center
+    margin-bottom: 75px
+    font-size: .9rem
+
+    @include u.responsive-sm
+      margin-bottom: 50px
+
+    
+
 
   .btntypes
     //background-color: red
     padding: 10px 20px
-    border-radius: 25px
-    border: 1px solid #4545454e
+    //border-radius: 25px
+    //border: 1px solid #4545454e
     display: flex
     justify-content: space-around
     align-items: center
     flex-wrap: wrap
-
-    @include u.responsive
-      width: 95%
-      padding: 10px
+    text-align: center
 
     @include u.responsive-sm
+      width: 95%
+      padding: 10px
+      justify-content: center
+
 
     button
       border: none
@@ -485,7 +501,7 @@ header
       @include u.responsive-sm
         padding: 10px
         font-size: 0.9rem
-        margin: 10px 5px
+        margin: 10px
 
       &:hover
         transform: scale(1.05, 1.05)
@@ -496,7 +512,7 @@ header
     display: flex
     justify-content: center
     flex-wrap: wrap
-    gap: 2rem
+    gap: 3rem
     width: 90%
     max-width: 1500px
 
@@ -508,6 +524,25 @@ header
       background-size: cover
       background-position: center
       background-repeat: no-repeat 
+      cursor: pointer
+      transition: .5s
+
+      &:hover
+        transform: scale(1.3)
+
+        @include u.responsive-ssm
+          transform: scale(1.1)
+          
+
+        .infobar
+          display: flex
+
+        .project-single-text
+
+          h1, ul
+            display: none
+
+          background-color: transparent
 
       @include u.responsive-sm
         width: 80%
@@ -521,7 +556,7 @@ header
 
       &-text
         text-align: center
-        background-color: #000000c1
+        background-color: #000000c5
         width: 100%
         height: 100%
         display: flex
@@ -529,7 +564,8 @@ header
         justify-content: center
         align-items: center
         border-radius: 11px
-        backdrop-filter: blur(1.5px)
+        position: relative
+        transition: .5s
 
         h1
           color: white
@@ -539,10 +575,12 @@ header
           -webkit-background-clip: text
           -webkit-text-fill-color: transparent
           animation: bg-position 2.5s infinite linear
+          pointer-events: none
 
         ul
           display: flex
           list-style: none
+          pointer-events: none
           
           li
             margin: 0 5px
@@ -551,6 +589,53 @@ header
               font-size: 1.250rem
               color: white
 
+        .infobar
+          display: flex
+          justify-content: space-between
+          align-items: center
+          text-align: center
+          position: absolute
+          bottom: 0
+          left: 0
+          padding: 10px 10%
+          display: none
+          width: 100%
+          background-color: #000000c3
+          border-bottom-right-radius: 11px
+          border-bottom-left-radius: 11px
+
+          @include u.responsive
+            padding: 15px 10%
+
+          p
+            font-size: .8rem
+            font-weight: bold
+            color: white
+            font-family: 'Montserrat', sans-serif
+
+            @include u.responsive
+              font-size: .9rem
+
+
+          button
+            margin-right: 10px
+            border: none
+            padding: 5px 20px
+            border-radius: 20px
+            font-size: 0.8rem
+            background-color: #db5313
+            color: white
+            font-family: 'Poppins'
+            font-weight: bod
+            cursor: pointer
+            transition: .3s
+
+            @include u.responsive
+              font-size: 1rem
+
+            &:hover
+              background-color: #0000003a
+              outline: 1px solid #ccc
 
 
     

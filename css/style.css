@@ -61,6 +61,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   transition: 0.3s;
   opacity: 0;
+  z-index: 20;
 }
 .scrollbtn i {
   font-size: 1.2rem;
@@ -216,7 +217,7 @@ header .side-navbar {
   top: -100vh;
   width: 100%;
   height: 100vh;
-  background: rgba(14, 12, 11, 0.9019607843);
+  background: rgba(5, 4, 4, 0.9019607843);
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -489,14 +490,13 @@ header .hero .hero-p-box span {
 .sc2-projects .sc2-title {
   width: 80%;
   text-align: center;
-  margin-bottom: 75px;
+  margin-bottom: 5px;
   font-size: 2.5rem;
   color: white;
 }
 @media (max-width: 950px) {
   .sc2-projects .sc2-title {
     width: 95%;
-    margin-bottom: 50px;
   }
 }
 .sc2-projects .sc2-title b {
@@ -505,19 +505,34 @@ header .hero .hero-p-box span {
   -webkit-text-fill-color: transparent;
   animation: bg-position 2.5s infinite linear;
 }
+.sc2-projects .sc2-subtitle {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 1.56px;
+  text-align: center;
+  margin-bottom: 75px;
+  font-size: 0.9rem;
+}
+@media (max-width: 950px) {
+  .sc2-projects .sc2-subtitle {
+    margin-bottom: 50px;
+  }
+}
 .sc2-projects .btntypes {
   padding: 10px 20px;
-  border-radius: 25px;
-  border: 1px solid rgba(69, 69, 69, 0.3058823529);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  text-align: center;
 }
-@media (max-width: 1150px) {
+@media (max-width: 950px) {
   .sc2-projects .btntypes {
     width: 95%;
     padding: 10px;
+    justify-content: center;
   }
 }
 .sc2-projects .btntypes button {
@@ -538,7 +553,7 @@ header .hero .hero-p-box span {
   .sc2-projects .btntypes button {
     padding: 10px;
     font-size: 0.9rem;
-    margin: 10px 5px;
+    margin: 10px;
   }
 }
 .sc2-projects .btntypes button:hover {
@@ -549,7 +564,7 @@ header .hero .hero-p-box span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
   width: 90%;
   max-width: 1500px;
 }
@@ -561,6 +576,25 @@ header .hero .hero-p-box span {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.sc2-projects-box .project-single:hover {
+  transform: scale(1.3);
+}
+@media (max-width: 550px) {
+  .sc2-projects-box .project-single:hover {
+    transform: scale(1.1);
+  }
+}
+.sc2-projects-box .project-single:hover .infobar {
+  display: flex;
+}
+.sc2-projects-box .project-single:hover .project-single-text {
+  background-color: transparent;
+}
+.sc2-projects-box .project-single:hover .project-single-text h1, .sc2-projects-box .project-single:hover .project-single-text ul {
+  display: none;
 }
 @media (max-width: 950px) {
   .sc2-projects-box .project-single {
@@ -578,7 +612,7 @@ header .hero .hero-p-box span {
 }
 .sc2-projects-box .project-single-text {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7568627451);
+  background-color: rgba(0, 0, 0, 0.7725490196);
   width: 100%;
   height: 100%;
   display: flex;
@@ -586,7 +620,8 @@ header .hero .hero-p-box span {
   justify-content: center;
   align-items: center;
   border-radius: 11px;
-  backdrop-filter: blur(1.5px);
+  position: relative;
+  transition: 0.5s;
 }
 .sc2-projects-box .project-single-text h1 {
   color: white;
@@ -596,10 +631,12 @@ header .hero .hero-p-box span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: bg-position 2.5s infinite linear;
+  pointer-events: none;
 }
 .sc2-projects-box .project-single-text ul {
   display: flex;
   list-style: none;
+  pointer-events: none;
 }
 .sc2-projects-box .project-single-text ul li {
   margin: 0 5px;
@@ -607,6 +644,59 @@ header .hero .hero-p-box span {
 .sc2-projects-box .project-single-text ul li i {
   font-size: 1.25rem;
   color: white;
+}
+.sc2-projects-box .project-single-text .infobar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 10%;
+  display: none;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7647058824);
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+@media (max-width: 1150px) {
+  .sc2-projects-box .project-single-text .infobar {
+    padding: 15px 10%;
+  }
+}
+.sc2-projects-box .project-single-text .infobar p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 1150px) {
+  .sc2-projects-box .project-single-text .infobar p {
+    font-size: 0.9rem;
+  }
+}
+.sc2-projects-box .project-single-text .infobar button {
+  margin-right: 10px;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  background-color: #db5313;
+  color: white;
+  font-family: "Poppins";
+  font-weight: bod;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (max-width: 1150px) {
+  .sc2-projects-box .project-single-text .infobar button {
+    font-size: 1rem;
+  }
+}
+.sc2-projects-box .project-single-text .infobar button:hover {
+  background-color: rgba(0, 0, 0, 0.2274509804);
+  outline: 1px solid #ccc;
 }
 
 /*# sourceMappingURL=style.css.map */
