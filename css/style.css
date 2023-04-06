@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb {
   display: none;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
 }
 @media (max-width: 950px) {
   .modalbox {
@@ -62,7 +62,6 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   padding: 60px 30px;
   display: none;
-  backdrop-filter: blur(10px);
 }
 .modal a {
   color: white;
