@@ -41,8 +41,9 @@ body::-webkit-scrollbar-thumb {
   height: 120%;
   display: none;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   backdrop-filter: blur(5px);
+  padding-top: 100px;
 }
 @media (max-width: 950px) {
   .modalbox {
@@ -62,6 +63,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   padding: 60px 30px;
   display: none;
+  position: relative;
 }
 .modal a {
   color: white;
