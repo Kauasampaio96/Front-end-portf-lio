@@ -33,14 +33,28 @@ body::-webkit-scrollbar-thumb {
   display: flex;
 }
 
+.modalbox {
+  position: absolute;
+  top: 2100px;
+  z-index: 25;
+  width: 100vw;
+  height: 120%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+}
+@media (max-width: 950px) {
+  .modalbox {
+    align-items: start;
+    padding-top: 30px;
+  }
+}
+
 .modal {
-  width: 90%;
+  width: 95%;
   max-width: 1300px;
   background: #1c1816;
-  position: absolute;
-  z-index: 20;
-  left: 50%;
-  transform: translateX(-50%);
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
   display: flex;
@@ -48,10 +62,32 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   padding: 60px 30px;
   display: none;
+  backdrop-filter: blur(10px);
+}
+.modal a {
+  color: white;
+}
+@media (max-width: 950px) {
+  .modal {
+    padding-top: 80px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .modal {
+    padding: 80px 0 60px;
+  }
 }
 .modal-video {
   width: 52%;
   height: 100%;
+}
+@media (max-width: 950px) {
+  .modal-video {
+    width: 85%;
+    height: 50%;
+  }
 }
 .modal-video video {
   width: 100%;
@@ -62,6 +98,12 @@ body::-webkit-scrollbar-thumb {
   width: 45%;
   height: 100%;
   font-size: 0.9rem;
+}
+@media (max-width: 950px) {
+  .modal-text {
+    width: 85%;
+    margin: 30px 0 50px;
+  }
 }
 .modal-text h1 {
   background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
@@ -86,6 +128,11 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   bottom: 15px;
 }
+@media (max-width: 950px) {
+  .modal .project-links {
+    bottom: 30px;
+  }
+}
 .modal .project-links a {
   color: white;
   text-decoration: none;
@@ -93,9 +140,22 @@ body::-webkit-scrollbar-thumb {
   padding: 5px 15px;
   border-radius: 5px;
   background: linear-gradient(90deg, rgba(241, 93, 26, 0.8), rgba(213, 44, 168, 0.8));
+  margin: 0 15px;
 }
-.modal .project-links a:last-of-type {
-  margin-left: 15px;
+@media (max-width: 950px) {
+  .modal .project-links a {
+    margin: 0 25px;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 550px) {
+  .modal .project-links a {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .modal .project-links a:last-of-type {
+    margin-left: 15px;
+  }
 }
 .modal img {
   width: 45px;

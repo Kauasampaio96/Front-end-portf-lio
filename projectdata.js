@@ -13,7 +13,7 @@ const dados = [
     bgImage: '../assets/crudjavascript.png',
     hospedagem: 'https://crud-js-personalizado.vercel.app/',
     github: 'https://github.com/Kauasampaio96/CrudJs_Personalizado' ,
-    video: '../assets/videos/crudjs.mp4',
+    video: 'assets/videos/crudjs.mp4',
     modalContent: `
     <p>Nesse projeto realizei um CRUD que nada mais é que uma sigla de operações em um banco de dados (Criar, Ler, Atualizar e Deletar).</p>
 
@@ -45,7 +45,7 @@ const dados = [
     bgImage: '../assets/projetorachi.png',
     hospedagem: 'https://rachi-project-kc.vercel.app/',
     github: 'https://github.com/Kauasampaio96/rachi_project' ,
-    video: '../assets/videos/projetorachi.mp4',
+    video: 'assets/videos/projetorachi.mp4',
     modalContent: `
     <p>Neste projeto desenvolvi um landing page totalmente responsiva para diferentes tamanhos de tela, utilizando de javascript para mudança de tema (Dark, Light), além de animações de acordo com o rolar da tela. Utilizei mais uma vez o pré processador de css: Sass, afim de reutilizar código e otimizar o processo de desenvolvimento.</p>
     `
@@ -64,7 +64,7 @@ const dados = [
     bgImage: '../assets/fabricademonstros.png',
     hospedagem: 'https://fabricademonstros.netlify.app/',
     github: 'https://github.com/Kauasampaio96/web-design-fabrica' ,
-    video: '../assets/videos/fabricademonstros.mp4',
+    video: 'assets/videos/fabricademonstros.mp4',
     modalContent: `
     <p>Neste projeto desenvolvi um landing page totalmente responsiva para diferentes tamanhos de tela, utilizando de javascript para mudança de tema (Dark, Light), além de animações de acordo com o rolar da tela. Utilizei mais uma vez o pré processador de css: Sass, afim de reutilizar código e otimizar o processo de desenvolvimento.</p>
     `
@@ -81,7 +81,7 @@ const dados = [
     bgImage: '../assets/calculadoradeimc.png',
     hospedagem: 'https://imc-calc-kc.netlify.app/',
     github: 'https://github.com/Kauasampaio96/imc_calc' ,
-    video: '../assets/videos/calculadoradeimc.mp4',
+    video: 'assets/videos/calculadoradeimc.mp4',
     modalContent: `
     <p>Utilizando conhecimento básicos de Javascript desenvolvi esta calculadora de IMC (índice de massa corporal). O projeto conta com verificação de campos vazios além de aceitar uso da vírgula para as medidas de peso e altura (pensando no usário brasileiro habituado a utilizar a virgula)</p>
     `
@@ -98,7 +98,7 @@ const dados = [
     bgImage: '../assets/projetoagency.png',
     hospedagem: 'https://projeto-agency-sass.netlify.app/',
     github: 'https://github.com/Kauasampaio96/projeto-agency-sass' ,
-    video: '../assets/videos/projetoagency.mp4',
+    video: 'assets/videos/projetoagency.mp4',
     modalContent: `
     <p>Este é um site totalmente responsivo para diferentes tamanhos de tela, construido com o pré processador de Css: Sass, onde utilizei de várias ferramentas que o pré processador oferece</p>
     `
@@ -117,7 +117,7 @@ const dados = [
     bgImage: '../assets/cruddjango.png',
     hospedagem: '',
     github: 'https://github.com/Kauasampaio96/Pj-crud-Django' ,
-    video: '../assets/videos/cruddjango.mp4',
+    video: 'assets/videos/cruddjango.mp4',
     modalContent: `
     <p>Nesse projeto realizei um CRUD que nada mais é que uma sigla de operações em um banco de dados (Criar, Ler, Atualizar e Deletar).</p>
 
@@ -143,7 +143,7 @@ const dados = [
     bgImage: '../assets/sistemabancario.png',
     hospedagem: '',
     github: 'https://github.com/Kauasampaio96/Sis-bancario-poo' ,
-    video: '../assets/videos/sistemabancario.mp4',
+    video: 'assets/videos/sistemabancario.mp4',
     modalContent: `
     <p>Nesse projeto desenvolvi um Sistema Bancário utilizando Python (Orientação a Objetos). Utilizei de bibliotecas para o desenvolvimento como: pytz, datetime, randit, pyodbc</p>
 
@@ -174,7 +174,7 @@ const dados = [
     bgImage: '../assets/clonespotify.png',
     hospedagem: 'https://kauasampaio96.github.io/pj-spotify-front-end/',
     github: 'https://github.com/Kauasampaio96/Spotify' ,
-    video: '../assets/videos/clonespotify.mp4',
+    video: 'assets/videos/clonespotify.mp4',
     modalContent: `
     <p>Neste projeto de Clone da Landing Page do Spotify, aperfeiçoei conhecimentos em Html, css e Bootstrap (framework css)</p>
     `
@@ -191,7 +191,7 @@ const dados = [
     bgImage: '../assets/clonenetflix.png',
     hospedagem: 'https://clonenetflixkauachaves.netlify.app/',
     github: 'https://github.com/Kauasampaio96/Netflix-clone' ,
-    video: '../assets/videos/clonenetflix.mp4',
+    video: 'assets/videos/clonenetflix.mp4',
     modalContent: `
     <p>Neste projeto de Clone da Landing Page da Netflix, além da página principal da plataforma aperfeiçoei conhecimentos em Html, css e Bootstrap (framework css)</p>
     `
@@ -208,7 +208,7 @@ const dados = [
     bgImage: '../assets/carddeinteracaojs.png',
     hospedagem: 'https://interacao-js-kc.netlify.app/',
     github: 'https://github.com/Kauasampaio96/interactive-rating-component-main' ,
-    video: '../assets/videos/carddeinteracao.mp4',
+    video: 'assets/videos/carddeinteracao.mp4',
     modalContent: `
     <p>Neste projeto aperfiçoei minhas habilidades em Javascript, Utilizando do DOM para a interação com o usuário.</p>
     `
@@ -225,7 +225,7 @@ const dados = [
     bgImage: '../assets/optimustechlandingpage.png',
     hospedagem: 'https://optimus-tech-landingpage.vercel.app/',
     github: 'https://github.com/Kauasampaio96/OptimusTech_landingpage' ,
-    video: '../assets/videos/optimustech.mp4',
+    video: 'assets/videos/optimustech.mp4',
     modalContent: `
     <p>Neste projeto aprimorei meus conhecimentos em Html e Css. Utilizando Sass para melhor processo de desenvolvimento, também utilizei a biblioteca AOS.js para animações de acordo com a rolagem da página.</p>
     `
@@ -242,7 +242,7 @@ const dados = [
     bgImage: '../assets/faqaccordion.png',
     hospedagem: 'https://faq-component-kc.netlify.app/',
     github: 'https://github.com/Kauasampaio96/faq-accordion-card-main' ,
-    video: '../assets/videos/faqaccordion.mp4',
+    video: 'assets/videos/faqaccordion.mp4',
     modalContent: `
     <p>Neste projeto aperfiçoei minhas habilidades em Javascript, Utilizando do DOM para a interação com o usuário.</p>
     `
@@ -258,7 +258,7 @@ const dados = [
     bgImage: '../assets/fourcardcomponent.png',
     hospedagem: 'https://four-card-component-kc.netlify.app/',
     github: 'https://github.com/Kauasampaio96/four-card-feature' ,
-    video: '../assets/fourcardcomponent.png',
+    video: 'assets/fourcardcomponent.png',
     modalContent: `
     <p>Neste Projeto aperfeiçoei meus conhecimento em Html e Css básico.</p>
     `
@@ -274,7 +274,7 @@ const dados = [
     bgImage: '../assets/socialcomponent.png',
     hospedagem: 'https://social-proof-kc.netlify.app/',
     github: 'https://github.com/Kauasampaio96/social-proof' ,
-    video: '../assets/socialcomponent.png',
+    video: 'assets/socialcomponent.png',
     modalContent: `
     <p>Neste Projeto aperfeiçoei meus conhecimento em Html e Css básico.</p>
     `
@@ -290,7 +290,7 @@ const dados = [
     bgImage: '../assets/treinogrid.png',
     hospedagem: 'https://grid-css-pratice.netlify.app/',
     github: 'https://github.com/Kauasampaio96/responsive-grid-layout' ,
-    video: '../assets/treinogrid.png',
+    video: 'assets/treinogrid.png',
     modalContent: `
     <p>Neste Projeto aperfeiçoei meus conhecimento em Html e Css básico.</p>
     `
@@ -306,7 +306,7 @@ const dados = [
     bgImage: '../assets/summaryresult.png',
     hospedagem: 'https://results-component-kc.netlify.app/',
     github: 'https://github.com/Kauasampaio96/results-summary-component-main' ,
-    video: '../assets/summaryresult.png',
+    video: 'assets/summaryresult.png',
     modalContent: `
     <p>Neste Projeto aperfeiçoei meus conhecimento em Html e Css básico.</p>
     `
@@ -322,7 +322,7 @@ const dados = [
     bgImage: '../assets/profilecard.png',
     hospedagem: 'https://profile-card-kc.netlify.app/',
     github: 'https://github.com/Kauasampaio96/profile-card-component-main' ,
-    video: '../assets/profilecard.png',
+    video: 'assets/profilecard.png',
     modalContent: `
     <p>Neste Projeto aperfeiçoei meus conhecimento em Html e Css básico.</p>
     `
@@ -338,7 +338,7 @@ const dados = [
     bgImage: '../assets/pricegrid.png',
     hospedagem: 'https://single-price-grid-kc.netlify.app/',
     github: 'https://github.com/Kauasampaio96/single_price_grid' ,
-    video: '../assets/pricegrid.png',
+    video: 'assets/pricegrid.png',
     modalContent: `
     <p>Neste Projeto aperfeiçoei meus conhecimento em Html e Css básico.</p>
     `
@@ -354,7 +354,7 @@ const dados = [
     bgImage: '../assets/cardscomponent.png',
     hospedagem: 'https://card-component-desafio.vercel.app/',
     github: 'https://github.com/Kauasampaio96/card_component-desafio' ,
-    video: '../assets/cardscomponent.png',
+    video: 'assets/cardscomponent.png',
     modalContent: `
     <p>Neste Projeto aperfeiçoei meus conhecimento em Html e Css básico.</p>
     `
@@ -370,7 +370,7 @@ const dados = [
     bgImage: '../assets/socialcard.png',
     hospedagem: 'https://stats-preview-kc.netlify.app/',
     github: 'https://github.com/Kauasampaio96/stats_preview_card' ,
-    video: '../assets/socialcard.png',
+    video: 'assets/socialcard.png',
     modalContent: `
     <p>Neste Projeto aperfeiçoei meus conhecimento em Html e Css básico.</p>
     `
@@ -386,7 +386,7 @@ const dados = [
     bgImage: '../assets/ordersummary.png',
     hospedagem: 'https://odersummary.netlify.app/',
     github: 'https://github.com/Kauasampaio96/resumo_de_pagamento' ,
-    video: '../assets/ordersummary.png',
+    video: 'assets/ordersummary.png',
     modalContent: `
     <p>Neste Projeto aperfeiçoei meus conhecimento em Html e Css básico.</p>
     `
@@ -402,7 +402,7 @@ const dados = [
     bgImage: '../assets/nftcard.png',
     hospedagem: 'https://nftcard-kauachaves.netlify.app/',
     github: 'https://github.com/Kauasampaio96/nft-card' ,
-    video: '../assets/nftcard.png',
+    video: 'assets/nftcard.png',
     modalContent: `
     <p>Neste Projeto aperfeiçoei meus conhecimento em Html e Css básico.</p>
     `
@@ -418,7 +418,7 @@ const dados = [
     bgImage: '../assets/flexcard.png',
     hospedagem: 'https://desafio-grupo-frontend.netlify.app/',
     github: 'https://github.com/Kauasampaio96/Desafio_FrontEnd-Group' ,
-    video: '../assets/flexcard.png',
+    video: 'assets/flexcard.png',
     modalContent: `
     <p>Neste Projeto aperfeiçoei meus conhecimento em Html e Css básico.</p>
     `

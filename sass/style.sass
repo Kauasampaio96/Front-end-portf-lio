@@ -5,15 +5,29 @@
 
 .active.modal
   display: flex
+  
+
+.modalbox
+  position: absolute
+  top: 2100px
+  z-index: 25
+  width: 100vw
+  height: 120%
+  display: none
+  justify-content: center
+  align-items: center
+  backdrop-filter: blur(20px)
+
+  @include u.responsive-sm
+    align-items: start
+    padding-top: 30px
+
+  
 
 .modal
-  width: 90%
+  width: 95%
   max-width: 1300px
   background: #1c1816
-  position: absolute
-  z-index: 20
-  left: 50%
-  transform: translateX(-50%)
   border-radius: 20px
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px
   display: flex
@@ -21,10 +35,26 @@
   justify-content: space-between
   padding: 60px 30px
   display: none
+  backdrop-filter: blur(10px)
+
+  a
+    color: white
+
+  @include u.responsive-sm
+    padding-top: 80px 
+    align-items: center
+    flex-direction: column
+  
+  @include u.responsive-ssm
+    padding: 80px 0 60px
 
   &-video
     width: 52%
     height: 100%
+    
+    @include u.responsive-sm
+      width: 85%
+      height: 50%
 
     video
       width: 100%
@@ -35,6 +65,10 @@
     width: 45%
     height: 100%
     font-size: .9rem
+
+    @include u.responsive-sm
+      width: 85%
+      margin: 30px 0 50px
 
     h1
         background: linear-gradient(90deg, rgba(241, 93, 26, 1), rgba(213, 44, 168, 1))
@@ -59,6 +93,10 @@
       position: absolute
       bottom: 15px
 
+      @include u.responsive-sm
+        bottom: 30px
+
+
       a
         color: white
         text-decoration: none
@@ -66,9 +104,22 @@
         padding: 5px 15px
         border-radius: 5px
         background: linear-gradient(90deg, rgba(241, 93, 26, .8), rgba(213, 44, 168, .8)) 
+        margin: 0 15px
 
-        &:last-of-type
-          margin-left: 15px
+        @include u.responsive-sm
+          margin: 0 25px
+          font-size: 1.3rem
+
+        @include u.responsive-ssm
+          font-size: .9rem
+          margin: 0
+
+          &:last-of-type
+            margin-left: 15px
+
+
+
+       
           
 
   img

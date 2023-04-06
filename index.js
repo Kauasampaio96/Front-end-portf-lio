@@ -127,60 +127,69 @@ dados.map( pj => {
 
 // Modal
 
-const modal =  document.createElement('div')
+const modalbox =  document.querySelector('.modalbox')
+const modal = document.createElement('div')
 modal.classList.add('modal')
 
-modal.innerHTML = `
+function modalData(pjId){
+
+  const project = dados.filter(p=> p.title === pjId)
+
+  modal.innerHTML = `
   
-<img id="closeiconmodal" class="close-icon" src="assets/close.svg" alt="">
+    <img id="closeiconmodal" class="close-icon" src="assets/close.svg" alt="">
+  
+    <div class="modal-video">
+      <video autoplay muted controls loop src="${project[0].video}"></video>
+  
+    </div>
+  
+    <div class="modal-text">
+  
+      <h1>${project[0].title}</h1>
+  
+      ${project[0].modalContent}
 
-<div class="modal-video">
-  <video autoplay muted controls loop src="assets/videos/clonenetflix.mp4"></video>
+    </div>
+  
+    <div class="project-links">
+  
+      <a target="_blank" href="${project[0].github}">Link do Repositório</a>
+  
+      <a target="_blank" href="${project[0].hospedagem}">Hospedagem</a>
+  
+    </div>
+        
+    `
 
-</div>
+  return modal
 
-<div class="modal-text">
 
-  <h1>Crud Javascript</h1>
+}
 
-  <p>Nesse projeto realizei um CRUD que nada mais é que uma sigla de operações em um banco de dados (Criar, Ler, Atualizar e Deletar).</p>
 
-  <p>Utilizei Javascript Puro para desenvolver toda a lógica da aplicação, onde inclui:</p>
 
-  <ul>
-    <li>• Abrir e fechar menu lateral</li>
-    <li>• Alterar tema (Dark, Light)</li>
-    <li>• Manipulação do banco de dados</li>
-    <li>• Validação de campos do formulário</li>
-    <li>• Abrir e fechar modal</li>
-  </ul>
-
-  <p>Fiz todo a estilização e responsividade com o pré processador de css: Sass.</p>
-</div>
-
-<div class="project-links">
-
-  <a href="#">Link do Repositório</a>
-
-  <a href="#">Hospedagem</a>
-
-</div>
-`
 
 const projectSingle = document.querySelectorAll('.project-single')
 
 projectSingle.forEach( pj=> {
-  pj.addEventListener('click', (e)=>{
-    var posY = e.clientY
-    console.log(posY)
-    modal.classList.add('active')
-    modal.style.top = posY + 'px'
 
-    document.querySelector('.sc2-projects-box').appendChild(modal)
-    console.log('passou por aq')
+  pj.addEventListener('click', ()=>{
+    const pjTitle = (pj.querySelector('.project-single-text>h1').innerHTML)
+    modalbox.style.display= 'flex'
+    modal.classList.add('active')
+    document.body.style.overflow = "hidden"
+    document.querySelector('html').style.scrollBehavior = 'auto'
+    
+    window.scrollTo(0, 2100)
+    document.querySelector('.modalbox').appendChild(modalData(pjTitle))
 
     document.getElementById('closeiconmodal').addEventListener('click', ()=>{
+      modalbox.style.display= 'flex'
       modal.classList.remove('active')
+      document.body.style.overflow = "visible"
+      modalbox.style.display= 'none'
+      
     })
   })
 })
