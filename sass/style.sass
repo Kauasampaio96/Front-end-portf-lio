@@ -767,10 +767,102 @@ header
               background-color: #0000003a
               outline: 1px solid #ccc
 
-            
 
+// Section 3
+
+.sc3-contact
+  @include  u.section-format
+  height: 100vh
+
+  @include u.responsive
+    height: 100%
+    padding: 100px 0
+
+  h1
+    width: 80%
+    text-align: center
+    margin-bottom: 5px
+    font-size: 3rem
+    color: white
+
+    @include u.responsive-sm
+      width: 95%
+      margin-bottom: 10px
+
+    b
+      background: linear-gradient(90deg, rgba(241, 93, 26, 1), rgba(213, 44, 168, 1))
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      animation: bg-position 2.5s infinite linear
+
+  .socialbtns
+    display: flex
+    justify-content: space-around
+    width: 80%
+    margin-top: 8rem
+
+    @include u.responsive
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      margin-top: 5rem
 
     
+      
+
+    &-btn
+      color: white
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      margin: 0 25px 60px
+
+      &:hover
+
+        i
+          background: linear-gradient(90deg, rgba(241, 93, 26, 1), rgba(213, 44, 168, 1))
+          opacity: 1
+
+
+
+      p
+        margin-top: 20px
+        text-transform: uppercase
+        letter-spacing: 1.75px 
+
+
+      a
+        text-decoration: none
+        display: flex
+        justify-content: center
+        align-items: center  
+      
+        i
+          font-size: 3rem
+          color: white
+          background-color: #2c2724
+          padding: 35px 40px 
+          border-radius: 50%
+          opacity: 0.75
+          transition: .5s all
+        
+
+// Footer
+
+footer
+  text-align: center
+  color: white
+  font-size: 1.125rem
+  position: relative
+  bottom: 50px
+    
+  a
+    text-decoration: none
+    color: white
+
+    &:hover
+      text-decoration: underline
         
 
     

@@ -838,4 +838,99 @@ header .hero .hero-p-box span {
   outline: 1px solid #ccc;
 }
 
+.sc3-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  height: 100vh;
+}
+@media (max-width: 1150px) {
+  .sc3-contact {
+    height: 100%;
+    padding: 100px 0;
+  }
+}
+.sc3-contact h1 {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 3rem;
+  color: white;
+}
+@media (max-width: 950px) {
+  .sc3-contact h1 {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+}
+.sc3-contact h1 b {
+  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: bg-position 2.5s infinite linear;
+}
+.sc3-contact .socialbtns {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 8rem;
+}
+@media (max-width: 1150px) {
+  .sc3-contact .socialbtns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+}
+.sc3-contact .socialbtns-btn {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 25px 60px;
+}
+.sc3-contact .socialbtns-btn:hover i {
+  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  opacity: 1;
+}
+.sc3-contact .socialbtns-btn p {
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+}
+.sc3-contact .socialbtns-btn a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sc3-contact .socialbtns-btn a i {
+  font-size: 3rem;
+  color: white;
+  background-color: #2c2724;
+  padding: 35px 40px;
+  border-radius: 50%;
+  opacity: 0.75;
+  transition: 0.5s all;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 1.125rem;
+  position: relative;
+  bottom: 50px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */
