@@ -108,6 +108,7 @@ dados.map( pj => {
   const newProject =  document.createElement('div')
   newProject.classList.add('project-single')
   newProject.style.backgroundImage = `url('${pj.bgImage}')`
+  newProject.setAttribute('data-category', `${pj.type}`)
 
   newProject.innerHTML = `
     <div class="project-single-text">
@@ -174,17 +175,18 @@ const projectSingle = document.querySelectorAll('.project-single')
 
 projectSingle.forEach( pj=> {
 
-  pj.addEventListener('click', ()=>{
+  pj.addEventListener('click', (e)=>{
     const pjTitle = (pj.querySelector('.project-single-text>h1').innerHTML)
     modalbox.style.display= 'flex'
     modal.classList.add('active')
     document.body.style.overflow = "hidden"
     document.querySelector('html').style.scrollBehavior = 'auto'
-    
+
     window.scrollTo(0, 2100)
     document.querySelector('.modalbox').appendChild(modalData(pjTitle))
 
     document.getElementById('closeiconmodal').addEventListener('click', ()=>{
+      document.querySelector('html').style.scrollBehavior = 'smooth'
       modalbox.style.display= 'flex'
       modal.classList.remove('active')
       document.body.style.overflow = "visible"

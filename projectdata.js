@@ -248,6 +248,7 @@ const dados = [
     `
   },
 
+  /* 
   {
     title: 'Four Cards',
     type: 'treino-css',
@@ -423,7 +424,7 @@ const dados = [
     <p>Neste Projeto aperfeiçoei meus conhecimento em Html e Css básico.</p>
     `
   },
-
+*/
 
 ]
 
