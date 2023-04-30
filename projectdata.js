@@ -1,5 +1,30 @@
 const dados = [
 
+
+  {
+    title: 'Exercícios em C#',
+    type: 'c#',
+    tecnologies: `
+    <li><i class="fa-solid fa-c"></i></li>
+    `,
+    bgImage: '../assets/exercicioc.png',
+    hospedagem: 'https://kauachaves-portfolio.netlify.app/',
+    github: 'https://github.com/Kauasampaio96/Exercicios-CSharp/tree/master' ,
+    video: 'assets/videos/exercicioc.mp4',
+    modalContent: `
+    <p>Atualmente estudando C# estou desenvolvendo diversos exercícios para fixação do aprendizado.</p>
+
+    <p>Tenho como objetivo desenvolver soluções para diversas plataformas e com esses exercícios estou tendo prática em:</p>
+
+    <ul>
+      <li>• Tipos de Dados em C#</li>
+      <li>• Estruturas de Repetição em C#</li>
+      <li>• Estruturas de Condição em C#</li>
+      <li>• Estruturas de Seleção em C#</li>
+    </ul>    
+    `
+  },
+
   {
     title: 'CRUD Javascript',
     type: 'javascript',
