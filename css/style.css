@@ -24,7 +24,7 @@ body::-webkit-scrollbar-track {
   background-color: #0E0C0B;
 }
 body::-webkit-scrollbar-thumb {
-  background: rgb(241, 93, 26);
+  background: rgb(28, 100, 255);
   border-radius: 10px;
   border: 2px solid #0E0C0B;
 }
@@ -107,7 +107,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .modal-text h1 {
-  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  background: linear-gradient(90deg, rgb(28, 100, 255), rgb(18, 67, 172));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: bg-position 2.5s infinite linear;
@@ -140,7 +140,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 0.9rem;
   padding: 5px 15px;
   border-radius: 5px;
-  background: linear-gradient(90deg, rgba(241, 93, 26, 0.8), rgba(213, 44, 168, 0.8));
+  background: linear-gradient(90deg, rgba(28, 100, 255,0.8), rgba(18, 67, 172,0.8));
   margin: 0 15px;
 }
 @media (max-width: 950px) {
@@ -169,7 +169,7 @@ body::-webkit-scrollbar-thumb {
 .circle {
   width: 100px;
   height: 100px;
-  background: linear-gradient(168.18deg, rgba(240, 85, 0, 0.5) 27.05%, rgba(192, 0, 240, 0.5) 109.49%);
+  background: linear-gradient(168.18deg, rgba(28, 100, 255, 0.5) 27.05%, rgba(18, 67, 172, 0.5) 109.49%);
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -186,7 +186,7 @@ body::-webkit-scrollbar-thumb {
   width: 45px;
   height: 45px;
   border-radius: 5px;
-  background: linear-gradient(110deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  background: linear-gradient(110deg, rgb(28, 100, 255), rgb(18, 67, 172));
   color: white;
   display: flex;
   justify-content: center;
@@ -214,7 +214,7 @@ header {
 header .shape {
   width: 650px;
   height: 650px;
-  background: linear-gradient(168.18deg, rgba(240, 85, 0, 0.5) 27.05%, rgba(192, 0, 240, 0.5) 109.49%);
+  background: linear-gradient(168.18deg, rgba(28, 100, 255, 0.5) 27.05%, rgba(18, 67, 172, 0.5) 109.49%);
   filter: blur(70px);
   border-radius: 50%;
   position: absolute;
@@ -293,7 +293,7 @@ header .navbar-list li::after {
   content: "";
   width: 0%;
   height: 2px;
-  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  background: linear-gradient(90deg, rgb(28, 100, 255), rgb(18, 67, 172));
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -434,7 +434,7 @@ header .hero h1 {
   }
 }
 header .hero h1 b {
-  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  background: linear-gradient(90deg, rgb(28, 100, 255), rgb(18, 67, 172));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: bg-position 2.5s infinite linear;
@@ -580,7 +580,7 @@ header .hero .hero-p-box span {
   }
 }
 .sc1-about-flexbox .text-box h1 b {
-  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  background: linear-gradient(90deg, rgb(28, 100, 255), rgb(18, 67, 172));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: bg-position 2.5s infinite linear;
@@ -601,7 +601,7 @@ header .hero .hero-p-box span {
   color: white;
   text-decoration: none;
   padding: 15px 20px;
-  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  background: linear-gradient(90deg, rgb(28, 100, 255), rgb(18, 67, 172));
   border-radius: 5px;
   margin-top: 10px;
   transition: 0.5s all;
@@ -638,7 +638,7 @@ header .hero .hero-p-box span {
   }
 }
 .sc2-projects .sc2-title b {
-  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  background: linear-gradient(90deg, rgb(28, 100, 255), rgb(18, 67, 172));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: bg-position 2.5s infinite linear;
@@ -677,7 +677,7 @@ header .hero .hero-p-box span {
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
-  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  background: linear-gradient(90deg, rgb(28, 100, 255), rgb(18, 67, 172));
   color: white;
   margin: 0 15px;
   text-transform: uppercase;
@@ -774,7 +774,7 @@ header .hero .hero-p-box span {
   pointer-events: none;
 }
 .sc2-projects-box .project-single-text ul li {
-  background: linear-gradient(90deg, #f76c2c, #e83fbb);
+  background: linear-gradient(90deg, rgb(28, 100, 255), rgb(18, 67, 172));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: bg-position 2.5s infinite linear;
@@ -821,7 +821,7 @@ header .hero .hero-p-box span {
   padding: 5px 20px;
   border-radius: 20px;
   font-size: 0.8rem;
-  background-color: #db5313;
+  background-color: rgb(28, 100, 255);
   color: white;
   font-family: "Poppins";
   font-weight: bod;
@@ -867,7 +867,7 @@ header .hero .hero-p-box span {
   }
 }
 .sc3-contact h1 b {
-  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  background: linear-gradient(90deg, rgb(28, 100, 255), rgb(18, 67, 172));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: bg-position 2.5s infinite linear;
@@ -895,7 +895,7 @@ header .hero .hero-p-box span {
   margin: 0 25px 60px;
 }
 .sc3-contact .socialbtns-btn:hover i {
-  background: linear-gradient(90deg, rgb(241, 93, 26), rgb(213, 44, 168));
+  background: linear-gradient(90deg, rgb(28, 100, 255), rgb(18, 67, 172));
   opacity: 1;
 }
 .sc3-contact .socialbtns-btn p {
