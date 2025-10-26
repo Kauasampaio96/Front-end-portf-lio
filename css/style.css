@@ -540,8 +540,8 @@ header .hero .hero-p-box span {
 .sc1-about-flexbox .img-box img {
   width: 100%;
   border-radius: 20px;
-  border: 1px solid rgba(241, 94, 26, 0.7647058824);
-  box-shadow: rgba(241, 94, 26, 0.3803921569) 0px 7px 29px 0px;
+  border: 1px solid rgba(28, 100, 255, 0.7647058824);
+  box-shadow: rgba(28, 100, 255, 0.3803921569) 0px 7px 29px 0px;
   filter: grayscale(100%);
   transition: 0.5s;
   cursor: pointer;
